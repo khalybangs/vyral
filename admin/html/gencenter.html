@@ -1,0 +1,503 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+
+  <style media="screen">
+    @media only screen and (min-width: 610px) {
+
+    }
+    @media only screen and (max-width: 600px) {
+
+    }
+  </style>
+
+<meta charset="utf-8">
+<meta name="robots" content="all,follow">
+<meta name="googlebot" content="index,follow,snippet,archive">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="description" content="threadal, threadal.com">
+<meta name="author" content="Khalil Baba">
+<meta name="keywords" content="beam, threadal, threads, threadal.com, beam wares, bw">
+
+<title>
+    vyral - General Admin-Center
+</title>
+<link rel="icon" href="../img/log2.png" type="image/png">
+
+<meta name="keywords" content="">
+
+
+
+<!-- styles -->
+<link href="../css/font-awesome.css" rel="stylesheet">
+<link href="../css/bootstrap.min.css" rel="stylesheet">
+<link href="../css/animate.min.css" rel="stylesheet">
+<link href="../css/owl.carousel.css" rel="stylesheet">
+<link href="../css/owl.theme.css" rel="stylesheet">
+
+
+<!-- theme stylesheet -->
+<link href="css/style.default.css" rel="stylesheet" id="theme-stylesheet">
+
+<!-- your stylesheet with modifications -->
+<link href="../css/custom.css" rel="stylesheet">
+<link href="../css/imgedits.css" rel="stylesheet">
+<link href="../css/load.css" rel="stylesheet">
+<link href="../css/chats.css" rel="stylesheet">
+<link href="../css/search.css" rel="stylesheet">
+<link href="../css/strings.css" rel="stylesheet">
+
+<script src="js/respond.min.js"></script>
+<!-- *** SCRIPTS TO INCLUDE ***
+_________________________________________________________ -->
+<script src="../js/jquery-1.11.0.min.js"></script>
+<script src="../js/bootstrap.min.js"></script>
+<script src="../js/jquery.cookie.js"></script>
+<script src="../js/waypoints.min.js"></script>
+<script src="../js/modernizr.js"></script>
+<script src="../js/bootstrap-hover-dropdown.js"></script>
+<script src="../js/owl.carousel.min.js"></script>
+<script src="../js/front.js"></script>
+
+<script src="../script/angular.js"></script>
+
+</head>
+<body style="font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; background-color: white; font-weight: lighter; background-color:#f0f0f0;">
+
+    <div class="container-fluid" id="container-one">
+
+      <!-- head -->
+      <div class="row">
+        <div class="col-md-12" style="height: 40px; box-shadow:0px 0px 15px -5px #1a1a1a; z-index: 3; position: fixed; background-color: white;">
+          <div style="float: left; width: 60%; height:100%;">
+            <p style="margin:5px; color:darkorange;"> <img src="../img/log2.png" alt="" width="25px" height="25px"> - General Admin Center </p>
+          </div>
+          <div style="float: right; width: 40%; height:100%;">
+            <p style="float:right; margin:5px; color:grey;"> Total Users - <strong style="font-size: 20px; color: darkorange;" id="totUsrs">0</strong> </p>
+          </div>
+        </div>
+        <div style="height: 40px;"></div>
+      </div>
+
+      <!-- body -->
+      <div class="row">
+
+        <!-- left-nav -->
+        <div class="col-md-4" style="height:550px;">
+          <br>
+          <div style="width: 100%; height: 510px; background-color: darkorange; border-radius:10px; box-shadow: 0px 0px 15px -5px #dddddd;">
+            <br>
+            <div style="width:95%; margin: auto;">
+              <!-- BTNS -->
+              <div id="my-btns1" style="width: 100%; height: 35px; background-color: white; color: darkorange; cursor: pointer;">
+                <P style="margin: 0px; padding: 5px; text-align: center;">Home/Profile</P>
+              </div>
+              <div id="my-btns2" style="width: 100%; height: 35px; background-color: transparent; color: white; cursor: pointer;">
+                <P style="margin: 0px; padding: 5px; text-align: center;">Users</P>
+              </div>
+              <div id="my-btns6" style="width: 100%; height: 35px; background-color: transparent; color: white; cursor: pointer;">
+                <P style="margin: 0px; padding: 5px; text-align: center;">Admin</P>
+              </div>
+              <div id="my-btns3" style="width: 100%; height: 35px; background-color: transparent; color: white; cursor: pointer;">
+                <P style="margin: 0px; padding: 5px; text-align: center;">Authors</P>
+              </div>
+              <div id="my-btns4" style="width: 100%; height: 35px; background-color: transparent; color: white; cursor: pointer;">
+                <P style="margin: 0px; padding: 5px; text-align: center;">Reports</P>
+              </div>
+              <div id="my-btns5" style="width: 100%; height: 35px; background-color: transparent; color: white; cursor: pointer;">
+                <P style="margin: 0px; padding: 5px; text-align: center;">Write updates</P>
+              </div>
+              <div id="my-btns7" style="width: 100%; height: 35px; background-color: transparent; color: white; cursor: pointer; margin-bottom: 10px;">
+                <P style="margin: 0px; padding: 5px; text-align: center;">Subscriptions</P>
+              </div>
+              <p style="text-align: center; font-size: 12.5px; margin: 0px; padding: 10px;" id="logOutAdm">
+                <button class="btn btn-default btn-sm" style="background-color: white; border: solid 1px white; color: orangered; border-radius: 15px;">logout</button>
+              </p>
+            </div>
+            <!-- <div style="width: 100%; height: 200px; background-color: white; position: relative;">
+              <div style="position: absolute; bottom: 0; width: 50%; height: 100px; background-color: skyblue;"></div>
+            </div> -->
+          </div>
+        </div>
+
+        <!-- body flw -->
+        <div class="col-md-8" style="height:550px;">
+          <br>
+          <div style="width: 100%; height: 510px; background-color: #f9f9f9; border-radius:10px; box-shadow: 0px 0px 15px 5px #dddddd;">
+
+            <!-- home flw -->
+            <div id="homeFlw" style="width: 100%; height: 100%;">
+              <!-- my info -->
+              <br>
+              <div style="width:65%; margin: auto; margin-top: -10px; height:490px; background-color: white; border-radius:10px;  border: solid 1px #f0f0f0;">
+                <br>
+                <div style="width: 60px; height: 60px; margin: auto;">
+                  <img src="../img/cc.png" width="100%" height="100%" alt="">
+                </div>
+                <br>
+                <p id="mail" style="padding: 5px; margin: 0px; text-align: center; color:grey;"></p>
+                <hr style="margin: 10px;">
+                <p id="cart" style="padding: 5px; margin: 0px; text-align: center; color:grey; font-size: 12.px;"></p>
+                <hr style="margin: 10px;">
+                <p id="name" style="padding: 5px; margin: 0px; text-align: center; color:grey; font-size: 12.px;"></p>
+                <hr style="width: 90%; margin: 10px;">
+                <p style="text-align: center; margin: 5px;">
+                  <button class="btn btn-info btn" id="genAllPwd"> generate new grand-pwd </button>
+                </p>
+              </div>
+              <!-- other str btns 
+              <div style="width:45%; margin: 10px; float: right; height:490px; background-color: white; border-radius:10px;  border: solid 1px #f0f0f0;">
+                <br>
+                <p style="text-align: center; margin: 5px;">
+                  <button class="btn btn-default btn"> edit profile info </button>
+                </p>
+                
+              </div>-->
+            </div>
+
+            <!-- users flow -->
+            <div id="userFlw" style="width: 100%; height: 100%; display: none;">
+              <span id="flowUsers"></span>
+
+              <div id="oyaBody" style="width:100%; height:100%; display: none;">
+                <!-- groups and users heads -->
+                <div style="width:45%; margin: 10px; float: left; height:490px; background-color: white; border-radius:10px;  border: solid 1px #f0f0f0;">
+                  <br>
+                  <!-- groups -->
+                  <div class="grpings" style="width:95%; margin:auto; height:150px; background-color: #f9f9f9; border: solid 1px #f0f0f0; border-radius: 5px;">
+                    <div style="width:100%; height:30px; border-bottom:solid 1px #f0f0f0; background-color: white;">
+                      <p style="margin: 0px; padding:5px; color: darkorange; float:left;">GROUPS</p>
+                      <img src="img/searcha.png" width="16.5px" height="16.5px" style="margin: 5px; float: right; cursor: pointer;" id="opnusrSrchr" alt="">
+                    </div>
+                    <div style="width: 100%; height: 120px; overflow-y: auto;">
+                      <br>
+                      <span id="flwGrps"></span>
+                      <br>
+                    </div>
+                  </div>
+                  <br>
+                  <!-- users-head flow -->
+                  <div class="grpings" style="width:95%; margin:auto; height:290px; border: solid 1px #f0f0f0; border-radius: 5px;">
+                    <div style="width:100%; height:40px; border-bottom:solid 1px #f0f0f0;"></div>
+                    <div style="width:100%; height:250px; border-bottom-right-radius: 5px; border-bottom-left-radius: 5px; background-color: #f9f9f9; overflow-y: auto;">
+                      <br>
+                      <span id="assUsHds"></span>
+                      <br>
+                    </div>
+                  </div>
+                  <!-- search con -->
+                  <div id="srchUsrCon" style="width:95%; margin:auto; height:420px; border: solid 1px #f0f0f0; border-radius: 5px; display: none;">
+                    <div style="width:100%; height:35px; border-bottom:solid 1px #f0f0f0;">
+                      <div style="width: 80%; height: 100%; float: left;">
+                        <input type="text" name="" id="srchUsrs" style="border:none; color: grey; height: 31px; margin: 2px; width: 90%;" placeholder="username">
+                      </div>
+                      <div style="width: 20%; height: 100%; float: right;">
+                        <img src="img/can.png" width="16.5px" height="16.5px" style="margin: 5px; float: right; cursor: pointer;" id="clsusrSrchr" alt="">
+                      </div>
+                    </div>
+                    <div style="width:100%; height:385px; border-bottom-right-radius: 5px; border-bottom-left-radius: 5px; background-color: #f9f9f9; overflow-y: auto;">
+                      <br>
+                      <span id="drpSrchdUsrs"></span>
+                      <br>
+                    </div>
+                  </div>
+                </div>
+                <!-- profile-flow -->
+                <div style="width:45%; margin: 10px; float: right; height:490px; background-color: white; border-radius:10px;  border: solid 1px #f0f0f0;">
+                  <p style="margin: 0px; padding: 5px; color: silver;">Profile Preview</p>
+                  <div style="height: 450px; width: 98%; margin: auto; background-color: #f9f9f9; border: solid 1px #f0f0f0; border-radius: 5px; overflow-y: auto;">
+                    <br>
+                    <span id="drpPrfle"></span>
+                    <br>
+                  </div>
+                </div>
+              </div>
+              <!-- groups and users-flow -->
+
+            </div>
+
+            <!-- wrt admin updte con -->
+            <div id="admnFlw" style="width: 100%; height: 100%; display: none;">
+              <br>
+              <div style="width: 98%; margin: auto; height:40px; background-color: white; margin-top: -10px; border-radius: 10px; border:solid 1px #dddddd;">
+                <p style="margin: 0px; padding:7.5px;">
+                  <button id="opnRevAdm" class="btn btn-info btn-xs" style="border-radius: 10px;">review Admins</button>
+                  <button id="opnCrtAdm" class="btn btn-default btn-xs" style="border-radius: 10px; margin-left: 10px;">create admin</button>
+                </p>
+              </div>
+              <!-- bodies -->
+              <div style="width: 98%; margin: auto; height:440px; margin-top: 10px; border: solid 1px #dddddd; border-radius: 10px; background-color: #f0f0f0;">
+                <!-- rev auts -->
+                <div id="revAdm-bod" style="width: 100%; height: 100%;">
+                  <br>
+                  <div style="float: left; width: 45%; height: 420px; margin-top: -10px; background-color: #f9f9f9; border: solid 1px #dddddd; border-radius: 10px; margin-left: 10px;">
+                    <br>
+                    <span id="flwAdmns"></span>
+                    <br>
+                  </div>
+                  <div style="float: right; overflow-y: auto; width: 50%; height: 420px; margin-top: -10px; background-color: #f9f9f9; border: solid 1px #dddddd; border-radius: 10px; margin-right: 10px;">
+                    <br>
+                    <span id="drpAdmnBod"></span>
+                    <br>
+                  </div>
+                </div>
+
+                <!-- crt admn -->
+                <div id="crtadm-bod" style="width: 100%; height: 100%; display: none;">
+                  <br>
+                  <!-- email verif -->
+                  <div id="admMaiInsCOn" style="width: 80%; margin:auto; margin-top: -10px; background-color: white; border: solid 1px #dddddd; border-radius: 10px;">
+                    <p style="margin:0px; padding:5px;">Email verification</p>
+                    <hr style="width: 100%; margin: auto; margin-bottom: 5px;">
+                    <input type="email" placeholder="enter email" name="" id="verAdmMl" style="margin: 5px; width: 300px; background-color: transparent; border:none; border-bottom:solid 1px #dddddd;">
+                    <!-- ver-code area -->
+                    <br>
+                    <button id="submit-mailVer-admn" class="btn btn-danger" style="display:none; background-color: darkorange; border: solid 1px darkorange; border-radius: 20px; margin: 10px;">submit</button>
+                    <br>
+                  </div>
+                  <!-- verify mail -->
+                  <div id="admMailVerCon" style="width: 100%; display: none;">
+                    <p style="text-align:center; margin:5px; color:grey; font-size:13px;"> A verification code was sent to <span id="sentToAdm"></span> </p>
+                    <p style="text-align:center; font-size:18px; margin:7.5px;"> <strong id="admMailverTimer"></strong> </p>
+                    <p style="text-align: center; margin: 5px; color:silver; font-size: 10px;">Insert the verfication code sent your email in the input below</p>
+                    <p style="text-align: center; margin: 2.5px; color:silver; font-size: 8px;"> <i>(Do not reload or close tab!)</i> </p>
+                    <p style="margin: 5px; text-align: center;">
+                      <input type="text" name="" id="mail-ver-in-adm" style="text-align: center; border: none; border-bottom:solid 1px #dddddd; height: 30px;" placeholder="000000">
+                      <br>
+                      <button id="submitVerCode-admn" class="btn btn-default btn-xs" style="margin: 5px;">submit</button>
+                    </p>
+                    <p style="text-align: center; margin: 0px; padding: 5px; color: orangered; font-size: 11px; display: none;" id="attmptsP-admn"> You have <strong id="attmptsMailVer-admn"></strong> more attempts </p>
+                    <br>
+                  </div>
+                  <div id="dontMail-div-admn" style="display: none;">
+                    <br>
+                    <p style="text-align: center; margin:0px; padding:5px; color:grey; font-size: 13px;">You have no valid access to the email you inserted on this platform today.</p>
+                    <p style="text-align: center; margin:0px; padding:5px; color:grey; font-size: 13px;">Try again some other time.</p>
+                    <div style="height:50px; width:50px; margin:auto;">
+                      <img src="img/lock.png" alt="" width="100%" height="100%">
+                    </div>
+                    <p style="text-align: center; margin: 5px;">
+                      <button id="reInsEmail-admn" class="btn btn-default btn-xs" style="margin: 5px;">insert another email</button>
+                    </p>
+                    <br>
+                  </div>
+                  <!-- create admin -->
+                  <div id="form-bg-admn" style="width: 80%; margin:auto; margin-top: -10px; background-color: white; border: solid 1px #dddddd; border-radius: 10px; display: none;">
+                    <p style="margin:0px; padding:5px;">Create admin</p>
+                    <hr style="width: 98%; margin: auto; margin-bottom: 5px;">
+                    <input type="email" placeholder="email" readonly name="" id="admMail" style="margin: 5px; background-color: transparent; border:none; border-bottom:solid 1px #dddddd;"><br>
+                    <input type="text" placeholder="first name" name="" id="admFName" style="margin: 5px; background-color: transparent; border:none; border-bottom:solid 1px #dddddd;"><br>
+                    <input type="text" placeholder="last name" name="" id="admLName" style="margin: 5px; background-color: transparent; border:none; border-bottom:solid 1px #dddddd;"><br>
+                    <!-- <input type="password" placeholder="create password" name="" id="autPwd" style="margin: 5px; background-color: transparent; border:none; border-bottom:solid 1px #dddddd;"><br>
+                    <input type="password" placeholder="confirm password" name="" id="autPwds" style="margin: 5px; background-color: transparent; border:none; border-bottom:solid 1px #dddddd;"><br> -->
+                    <br>
+                    <!--<p style="margin: 5px; font-size: 12px; color:silver;">categories:</p>
+                    <input type="checkbox" style="margin: 5px;" id="ck1-adm" value="General Admin"> <i style="color: grey; font-size: 10px;">General Admin</i><br>
+                    <input type="checkbox" style="margin: 5px;" id="ck2-adm" value="User Admin"> <i style="color: grey; font-size: 10px;">User Admin</i>-->
+                    <hr style="width: 98%; margin: auto; margin-bottom: 5px;">
+                    <button id="subAdmInf" class="btn btn-danger" style="background-color: darkorange; border: solid 1px darkorange; border-radius: 20px; margin: 10px;">submit</button>
+                    <br>
+                  </div>
+
+                </div>
+
+              </div>
+
+            </div>
+
+            <!-- authors flow -->
+            <div id="autFlw" style="width: 100%; height: 100%; display: none;">
+              <br>
+              <span id="flowAuth"></span>
+              <!-- top nav -->
+              <div style="width: 98%; margin: auto; height:40px; background-color: white; margin-top: -10px; border-radius: 10px; border:solid 1px #dddddd;">
+                <p style="margin: 0px; padding:7.5px;">
+                  <button id="opnRevAut" class="btn btn-info btn-xs" style="border-radius: 10px;">review Authors</button>
+                  <button id="opnCrtAut" class="btn btn-default btn-xs" style="border-radius: 10px; margin-left: 10px;">create author</button>
+                </p>
+              </div>
+              <!-- bodies -->
+              <div style="width: 98%; margin: auto; height:440px; margin-top: 10px; border: solid 1px #dddddd; border-radius: 10px; background-color: #f0f0f0;">
+                <!-- rev auts -->
+                <div id="revaut-bod" style="width: 100%; height: 100%;">
+                  <br>
+                  <div style="float: left; width: 45%; height: 420px; margin-top: -10px; background-color: #f9f9f9; border: solid 1px #dddddd; border-radius: 10px; margin-left: 10px;">
+                    <br>
+                    <span id="flwAuths"></span>
+                    <br>
+                  </div>
+                  <div style="float: right; overflow-y: auto; width: 50%; height: 420px; margin-top: -10px; background-color: #f9f9f9; border: solid 1px #dddddd; border-radius: 10px; margin-right: 10px;">
+                    <br>
+                    <span id="drpAuthBod"></span>
+                    <br>
+                  </div>
+                </div>
+                <!-- crt auts -->
+                <div id="crtaut-bod" style="width: 100%; height: 100%; display: none;">
+                  <br>
+                  <!-- email verif -->
+                  <div id="autMaiInsCOn" style="width: 80%; margin:auto; margin-top: -10px; background-color: white; border: solid 1px #dddddd; border-radius: 10px;">
+                    <p style="margin:0px; padding:5px;">Email verification</p>
+                    <hr style="width: 100%; margin: auto; margin-bottom: 5px;">
+                    <input type="email" placeholder="enter email" name="" id="verAutMl" style="margin: 5px; width: 300px; background-color: transparent; border:none; border-bottom:solid 1px #dddddd;">
+                    <!-- ver-code area -->
+                    <br>
+                    <button id="submit-mailVer" class="btn btn-danger" style="display:none; background-color: darkorange; border: solid 1px darkorange; border-radius: 20px; margin: 10px;">submit</button>
+                    <br>
+                  </div>
+                  <!-- verify mail -->
+                  <div id="autMailVerCon" style="width: 100%; display: none;">
+                    <p style="text-align:center; margin:5px; color:grey; font-size:13px;"> A verification code was sent to <span id="sentTo"></span> </p>
+                        <p style="text-align:center; font-size:18px; margin:7.5px;"> <strong id="autMailverTimer"></strong> </p>
+                        <p style="text-align: center; margin: 5px; color:silver; font-size: 10px;">Insert the verfication code sent your email in the input below</p>
+                        <p style="text-align: center; margin: 2.5px; color:silver; font-size: 8px;"> <i>(Do not reload or close tab!)</i> </p>
+                        <p style="margin: 5px; text-align: center;">
+                          <input type="text" name="" id="mail-ver-in" style="text-align: center; border: none; border-bottom:solid 1px #dddddd; height: 30px;" placeholder="000000">
+                          <br>
+                          <button id="submitVerCode" class="btn btn-default btn-xs" style="margin: 5px;">submit</button>
+                        </p>
+                        <p style="text-align: center; margin: 0px; padding: 5px; color: orangered; font-size: 11px; display: none;" id="attmptsP"> You have <strong id="attmptsMailVer"></strong> more attempts </p>
+                        <br>
+                      </div>
+                      <div id="dontMail-div" style="display: none;">
+                        <br>
+                        <p style="text-align: center; margin:0px; padding:5px; color:grey; font-size: 13px;">You have no valid access to the email you inserted on this platform today.</p>
+                        <p style="text-align: center; margin:0px; padding:5px; color:grey; font-size: 13px;">Try again some other time.</p>
+                        <div style="height:50px; width:50px; margin:auto;">
+                          <img src="img/lock.png" alt="" width="100%" height="100%">
+                        </div>
+                        <p style="text-align: center; margin: 5px;">
+                          <button id="reInsEmail" class="btn btn-default btn-xs" style="margin: 5px;">insert another email</button>
+                        </p>
+                        <br>
+                  </div>
+                  <!-- create author -->
+                  <div id="form-bg" style="width: 80%; margin:auto; margin-top: -10px; background-color: white; border: solid 1px #dddddd; border-radius: 10px; display: none;">
+                    <p style="margin:0px; padding:5px;">Create Author</p>
+                    <hr style="width: 98%; margin: auto; margin-bottom: 5px;">
+                    <input type="email" placeholder="email" readonly name="" id="autMail" style="margin: 5px; background-color: transparent; border:none; border-bottom:solid 1px #dddddd;"><br>
+                    <input type="text" placeholder="first name" name="" id="autFName" style="margin: 5px; background-color: transparent; border:none; border-bottom:solid 1px #dddddd;"><br>
+                    <input type="text" placeholder="last name" name="" id="autLName" style="margin: 5px; background-color: transparent; border:none; border-bottom:solid 1px #dddddd;"><br>
+                    <!-- <input type="password" placeholder="create password" name="" id="autPwd" style="margin: 5px; background-color: transparent; border:none; border-bottom:solid 1px #dddddd;"><br>
+                    <input type="password" placeholder="confirm password" name="" id="autPwds" style="margin: 5px; background-color: transparent; border:none; border-bottom:solid 1px #dddddd;"><br> -->
+                    <br>
+                    <div class="dropdown" style="float:left; margin:5px;">
+                      <button class="btn btn-warning btn-xs dropdown-toggle" type="button" data-toggle="dropdown" id="lclid">Country <span class="caret"></span></button>
+                      <ul class="dropdown-menu">
+                        <span id="drpLcl"></span>
+                      </ul>
+                    </div>
+                    <input id="lclcart" required type="text" name="" value="" style="margin-top:10px; display:none;">
+                    <br>
+                    <!--<p style="margin: 5px; font-size: 12px; color:silver;">categories:</p>
+                    <input type="checkbox" value="Music" style="margin: 5px;" id="ck1" value="Music"> <i style="color: grey; font-size: 10px;">Music</i>
+                    <input type="checkbox" value="Politics" style="margin: 5px;" id="ck2" value="Politics"> <i style="color: grey; font-size: 10px;">Politics</i>
+                    <input type="checkbox" value="People" style="margin: 5px;" id="ck3" value="People"> <i style="color: grey; font-size: 10px;">People</i>
+                    <input type="checkbox" value="Sports" style="margin: 5px;" id="ck4" value="Sports"> <i style="color: grey; font-size: 10px;">Sports</i>
+                    <input type="checkbox" value="Art" style="margin: 5px;" id="ck5" value="Art"> <i style="color: grey; font-size: 10px;">Art</i>
+                    <input type="checkbox" value="Entertainment" style="margin: 5px;" id="ck6" value="Entertainment"> <i style="color: grey; font-size: 10px;">Entertainment</i>
+                    <input type="checkbox" value="Business" style="margin: 5px;" id="ck7" value="Business"> <i style="color: grey; font-size: 10px;">Business</i>
+                    <input type="checkbox" value="Fashion" style="margin: 5px;" id="ck8" value="Fashion"> <i style="color: grey; font-size: 10px;">Fashion</i> <br><br>-->
+                    <hr style="width: 98%; margin: auto; margin-bottom: 5px;">
+                    <button id="subAutInf" class="btn btn-danger" style="background-color: darkorange; border: solid 1px darkorange; border-radius: 20px; margin: 10px;">submit</button>
+                    <br>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- reports floe -->
+            <div id="repFlw" style="width: 100%; height: 100%; display: none;">
+              <span id="flowReps"></span>
+              <!-- reports flow -->
+              <div style="width:45%; margin: 10px; float: left; height:490px; background-color: white; border-radius:10px;  border: solid 1px #f0f0f0;">
+                <p style="margin: 0px; padding: 5px; color: silver;">Reports</p>
+                <div style="height: 450px; width: 98%; margin: auto; background-color: #f9f9f9; border: solid 1px #f0f0f0; border-radius: 5px; overflow-y: auto;">
+                  <br>
+                  <span id="drpRprts"></span>
+                  <br>
+                </div>
+              </div>
+              <!-- reports bodies -->
+              <div style="width:45%; margin: 10px; float: right; height:490px; background-color: white; border-radius:10px;  border: solid 1px #f0f0f0;">
+                <p style="margin: 0px; padding: 5px; color: silver;">Reported Preview</p>
+                <div style="height: 450px; width: 98%; margin: auto; background-color: #f9f9f9; border: solid 1px #f0f0f0; border-radius: 5px; overflow-y: auto;">
+                  <br>
+                  <span id="drpRprtBods"></span>
+                  <br>
+                </div>
+              </div>
+            </div>
+
+            <!-- subscriptions -->
+            <div id="subFlw" style="width: 100%; height: 100%; display: none;">
+              <!-- reports flow -->
+              <div style="width:40%; margin: 10px; float: left; height:490px; background-color: white; border-radius:10px;  border: solid 1px #f0f0f0;">
+                <div style="width: 100%; height: 65px;">
+                  <div style="width: 100%; height: 30px;">
+                    <p style="margin: 0px; padding: 5px; color: silver;">User Authors</p>
+                  </div>
+                  <div style="width: 100%; height: 35px;">
+                    <input type="text" name="" id="" style="margin:3px; float:left; height:30px; border:none; background-color: #f9f9f9; border-radius: 15px; width: 80%;" placeholder="search user">
+                    <img src="img/searcheda.png" width="22.5px" height="22.5px" style="float: right; margin: 5px; cursor: pointer;" alt="">
+                  </div>
+                </div>
+                <div style="height: 420px; width: 98%; margin: auto; background-color: #f9f9f9; border: solid 1px #f0f0f0; border-radius: 5px; overflow-y: auto;">
+                  <br>
+                  <span id="drpUsrAuts"></span>
+                  <br>
+                </div>
+              </div>
+              <!-- reports bodies -->
+              <div style="width:55%; margin: 10px; float: right; height:490px; background-color: white; border-radius:10px; border: solid 1px #f0f0f0;">
+                <p style="margin: 0px; padding: 5px; color: silver;">Author Preview</p>
+                <div style="height: 450px; width: 98%; margin: auto; background-color: #f9f9f9; border: solid 1px #f0f0f0; border-radius: 5px; overflow-y:hidden;">
+                  <br>
+                  <span id="drpUAutBods"></span>
+                </div>
+              </div>
+            </div>
+
+            <!-- wrt admin updte con -->
+            <div id="wrtFlw" style="width: 100%; height: 100%; display: none;">
+              <!-- write -->
+              <div style="width:45%; margin: 10px; float: left; height:490px; background-color: white; border-radius:10px;  border: solid 1px #f0f0f0;">
+                <p style="margin: 0px; padding: 5px; color: silver;">Write updates</p>
+                <div style="height: 450px; width: 98%; margin: auto; background-color: #f9f9f9; border: solid 1px #f0f0f0; border-radius: 5px; overflow-y: auto;">
+                  <br>
+
+                  <div style="width: 95%; margin:auto; background-color: white;">
+                    <input type="text" id="comUptHd" style="border: none; border-bottom: solid 1px #f0f0f0; width: 70%; margin: 5px;" placeholder="heading">
+                    <textarea name="" id="comUptBd" style="width: 70%; border-radius: 5px; border: solid 1px #f0f0f0; margin: 5px;" placeholder="body"></textarea>
+                    <p style="margin: 5px; font-size: 12px; color:silver;">type:</p>
+                    <input type="checkbox" value="Dev" style="margin: 5px;" id="devT" value="Music"> <i style="color: grey; font-size: 10px;">Developers & technical administrators</i><br>
+                    <input type="checkbox" value="Aut" style="margin: 5px;" id="autT" value="Politics"> <i style="color: grey; font-size: 10px;">Authors & content creators</i><br>
+                    <button style="margin: 5px;" id="subComUpdtes" class="btn btn-info btn-xs">submit</button>
+                  </div>
+                  
+                  <br>
+                </div>
+              </div>
+              <!-- write -->
+              <div style="width:48%; margin: 10px; float: right; height:490px; background-color: white; border-radius:10px;  border: solid 1px #f0f0f0;">
+                <p style="margin: 0px; padding: 5px; color: silver;">Updates flow</p>
+                <div style="height: 450px; width: 98%; margin: auto; background-color: #f9f9f9; border: solid 1px #f0f0f0; border-radius: 5px; overflow-y: auto;">
+                  <br>
+                  <span id="drpUpdtBods"></span>
+                  <br>
+                </div>
+              </div>
+            </div>
+
+          </div>
+        </div>
+
+        <div></div>
+
+      </div>
+
+    </div>
+    <script src="adcenter.js"></script>
+
+  </body>
+</html>

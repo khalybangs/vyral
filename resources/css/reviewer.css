@@ -1,0 +1,10 @@
+@media only screen and (min-width: 610px) {
+    #drp-like-tag-rev-bod {
+        width: 45%;
+    }
+}
+@media only screen and (max-width: 600px) {
+    #drp-like-tag-rev-bod {
+        width: 100%;
+    }
+}

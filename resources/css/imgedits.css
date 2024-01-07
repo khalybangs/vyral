@@ -1,0 +1,21 @@
+.yellow {
+    filter:contrast(150%) brightness(120%);
+}
+.purple {
+    filter:hue-rotate(20deg);
+}
+.blue {
+    filter:saturate(2);
+}
+.brown {
+    filter:contrast(150%);
+}
+.reds {
+    filter:sepia(50%);
+}
+.bandw {
+    filter: grayscale(100%);
+}
+.pale {
+    filter: grayscale(65%);
+}

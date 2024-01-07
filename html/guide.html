@@ -1,0 +1,531 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+    <head>
+
+  <style media="screen">
+
+    .grbtns:hover {
+        background-color: #ff6600;
+        cursor: pointer;
+    }
+    .perfHd {
+        font-size: 22px;
+        color: black;
+        padding: 10px;
+    }
+    .perfExp {
+        font-size: 16.5px;
+        color: #1a1a1a;
+        padding: 7.5px;
+        margin: 0px;
+    }
+    .imp {
+        padding: 10px;
+        border: solid 1px #f0f0f0;
+        background-color: #f9f9f9;
+        border-radius: 5px;
+        margin-bottom: 15px;
+    }
+    .sub_hdxm {
+        font-size: 18px;
+    }
+   @media only screen and (min-width: 610px) {
+     body {
+       background-color: darkorange;
+     }
+     #logCon {
+       height:530px;
+       background-image:url('img/cb2.png'); 
+       background-size:100% 100%;
+       box-shadow:0px 0px 40px -15px #1a1a1a;
+     }
+     #askSig {
+        color:#1a1a1a;
+      }
+      .tutImgs {
+          width: 35%;
+      }
+      .imp {
+          width: 80%;
+      }
+    }
+    @media only screen and (max-width: 600px) {
+      #logCon {
+       height:450px;
+       background-image: none;
+       background-color: darkorange;
+      }
+      #askSig {
+        color:white;
+      }
+      #moneyPit {
+        display: none;
+      }
+      #theCon {
+        margin-top:20px;
+      }
+      .tutImgs {
+          width: 85%;
+      }
+      .imp {
+          width: 95%;
+          margin: auto;
+      }
+    }
+  </style>
+
+  <meta charset="utf-8">
+  <meta name="robots" content="all,follow">
+  <meta name="googlebot" content="index,follow,snippet,archive">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="beamtrends, beamtrends.com">
+  <meta name="author" content="Khalil Baba">
+  <meta name="keywords" content="beam, beamtrends, trends, beamtrends.com, beam wares, bt">
+
+  <title>
+      vyral - Information and guidelines
+  </title>
+  <link rel="icon" href="img/log2.png" type="image/png">
+
+  <meta name="keywords" content="">
+
+  
+
+  <!-- styles -->
+  <link href="css/font-awesome.css" rel="stylesheet">
+  <link href="css/bootstrap.min.css" rel="stylesheet">
+  <link href="css/animate.min.css" rel="stylesheet">
+  <link href="css/owl.carousel.css" rel="stylesheet">
+  <link href="css/owl.theme.css" rel="stylesheet">
+  
+
+  <!-- theme stylesheet -->
+  <link href="css/style.default.css" rel="stylesheet" id="theme-stylesheet">
+
+  <!-- your stylesheet with modifications -->
+    <link href="css/custom.css" rel="stylesheet">
+    <link href="../css/load.css" rel="stylesheet">
+
+
+  <script src="js/respond.min.js"></script>
+
+
+    <!-- *** SCRIPTS TO INCLUDE ***
+    _________________________________________________________ -->
+    <script src="js/jquery-1.11.0.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/jquery.cookie.js"></script>
+    <script src="js/waypoints.min.js"></script>
+    <script src="js/modernizr.js"></script>
+    <script src="js/bootstrap-hover-dropdown.js"></script>
+    <script src="js/owl.carousel.min.js"></script>
+    <script src="js/front.js"></script>
+
+  </head>
+  <body style="font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; background-color: white; background-color: white;">
+    
+    <span id="dropLoading"></span>
+    
+    <div class="container-fluid" id="container-one">
+
+        <!-- head -->
+        <div class="row">
+            <div class="col-md-12 col-xs-12" style="height:130px; position: fixed; z-index: 2;">
+                <div class="row">
+                    <div class="col-lg-12 col-xs-12" style="height: 70px; font-weight: lighter; background-color:white;">
+                        <p style="margin: 0px; padding: 7.5px; font-size: 25px; color: #1a1a1a;;"><span style="color: #ff6600; font-weight: bold;">vyral</span> <span style="font-size: 20px;">community information</span></p>
+                    </div>
+                    <div class="col-lg-12 col-xs-12" style="background-color: rgb(252, 252, 252); height: 60px;">
+                        <div class="clearfix visible-lg" style="height: 50px; width: 100%; background-color: darkorange; border-radius: 5px;">
+                            <div class="grbtns abtBtn" style="height: 100%; background-color: #e65300; width: 200px; float: left; border-top-left-radius: 5px; border-bottom-left-radius: 5px;">
+                                <p style="margin: 0px; padding: 10px; text-align: center; color: white;">About & Functionalities</p>
+                            </div>
+                            <div class="grbtns privBtn" style="height: 100%; width: 170px; float: left;">
+                                <p style="margin: 0px; padding: 10px; text-align: center; color: white;">Data Policy</p>
+                            </div>
+                            <div class="grbtns termBtn" style="height: 100%; width: 175px; float: left;">
+                                <p style="margin: 0px; padding: 10px; text-align: center; color: white;">Terms of Services</p>
+                            </div>
+                            <div class="grbtns ComgBtn" style="height: 100%; width: 185px; float: left;">
+                                <p style="margin: 0px; padding: 10px; text-align: center; color: white;">Community Guidelines</p>
+                            </div>
+                            <div class="grbtns autBtn" style="height: 100%; width: 170px; float: left;">
+                                <p style="margin: 0px; padding: 10px; text-align: center; color: white;">Author Account</p>
+                            </div>
+                            <div class="grbtns tecBtn" style="height: 100%; width: 170px; float: left;">
+                                <p style="margin: 0px; padding: 10px; text-align: center; color: white;">Tech & Optimization</p>
+                            </div>
+                            <div class="grbtns agreeBtn" style="height: 100%; width: 150px; float: left;">
+                                <p style="margin: 0px; padding: 10px; text-align: center; color: white;">Agree</p>
+                            </div>
+                        </div>
+                        <div class="clearfix visible-xs" style="height: 50px; width: 100%; overflow-x: auto; background-color: darkorange; border-radius: 5px;">
+                            <div style="width:1250px; height: 100%;">
+                                <div class="grbtns abtBtn" style="height: 100%; background-color: #e65300; width: 200px; float: left; border-top-left-radius: 5px; border-bottom-left-radius: 5px;">
+                                    <p style="margin: 0px; padding: 10px; text-align: center; color: white;">About & Functionalities</p>
+                                </div>
+                                <div class="grbtns privBtn" style="height: 100%; width: 170px; float: left;">
+                                    <p style="margin: 0px; padding: 10px; text-align: center; color: white;">Data Policy</p>
+                                </div>
+                                <div class="grbtns termBtn" style="height: 100%; width: 175px; float: left;">
+                                    <p style="margin: 0px; padding: 10px; text-align: center; color: white;">Terms of Services</p>
+                                </div>
+                                <div class="grbtns ComgBtn" style="height: 100%; width: 185px; float: left;">
+                                    <p style="margin: 0px; padding: 10px; text-align: center; color: white;">Community Guidelines</p>
+                                </div>
+                                <div class="grbtns autBtn" style="height: 100%; width: 170px; float: left;">
+                                    <p style="margin: 0px; padding: 10px; text-align: center; color: white;">Author Account</p>
+                                </div>
+                                <div class="grbtns tecBtn" style="height: 100%; width: 170px; float: left;">
+                                    <p style="margin: 0px; padding: 10px; text-align: center; color: white;">Tech & Optimization</p>
+                                </div>
+                                <div class="grbtns agreeBtn" style="height: 100%; width: 150px; float: left;">
+                                    <p style="margin: 0px; padding: 10px; text-align: center; color: white;">Agree</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- 
+        -----------------
+        Bodies
+        -----------------
+        -->
+        <div style="height: 130px;"></div>
+        <div class="row">
+            <div class="col-md-1"></div>
+            <div class="col-lg-12 col-xs-12">
+                <br>
+
+                <span clas="row" id="chkNewNoti" style="display:none; margin-bottom:10px;">
+                    <div class="col-md-3"></div>
+                    <div class="col-md-6 col-xs-12">
+                        <div style="width:100%; border:solid 0.6px #f0f0f0; border-radius:7px;">
+                            <p style="margin:0px; padding:5px; color:grey; font-size:11.5px; text-align:center;">It seems like you have not agreed to some updated policies and community guidelines.</p>
+                            <p style="margin:0px; padding:5px; text-align:center;">
+                                <button class="btn btn-default btn-xs" id="agreeBtn" style="border-radius:10px; color:darkorange; border:solid 1px darkorange;" id="go to agreement">conclude</button>
+                            </p>
+                        </div>
+                    </div>
+                    <div class="col-md-3"></div>
+                </span>
+                <div class="row" id="" style="margin-bottom:10px;">
+                    <!--<div class="col-md-12 col-xs-12">
+                        <div style="width: 100px; height: 100px; margin: auto;">
+                            <img src="img/bw3.png" alt="" width="100%" height="100%">
+                        </div>
+                    </div>-->
+                </div>
+                
+                <div class="row">
+                    <div class="col-xs-12 col-lg-5">
+                        <div class="flashC" style="display:none; width: 100%; height: 330px; border-radius: 15px; background-size: cover; background-color: rgba(233, 233, 233, 0.641);">
+                            <div style="width: 100%; height: 75%;"></div>
+                            <div style="width: 100%; height: 25%; background-color: rgba(32, 32, 32, 0.853); border-bottom-left-radius: 15px; border-bottom-right-radius: 15px;">
+                                <p class="flashCT" style="color: white; margin: 5px; padding: 5px; font-size: 25px;"></p>
+                            </div>
+                        </div>
+                        
+                    </div>
+                    <div class="col-xs-12 col-lg-7">
+                        <!-- abt&fun -->
+                        <div class="allBodies" id="abtFuncBpod" style="width: 100%;">
+                            <br>
+                            <p class="perfExp"> <span class="sub_hdxm">vyral</span> is an Interactive News Medium created by <span class="sub_hdxm">Beam Wares</span><sup style="font-size: 10px;">LTD</sup>. This platform is a free entrance application that allow users to fetch validated information from trusted sources on the internet and all digital platforms. vyral also allow users to share their own experiences and thoughts as journals or threads tied to Strings and social abilities such as chats are also included.</p> 
+                            <div class="imp">
+                                <p>Although, being a free platform, there are regulations and terms to ensure safety and proper understanding between both parties <span style="font-size: 12px;">(read our <span style="color: skyblue; cursor: pointer;" id="goToComm">Community Guidelines</span> and <span style="color: skyblue; cursor: pointer;" id="goToTerms">Terms of Services</span> to get enlightened)</span>. </p>
+                            </div>
+                            <hr style="margin: 7.5px;">
+                            <p class="perfHd">Functionalities</p>
+                            <div style="width: 60px; height: 60px;">
+                                <img src="img/read.png" alt="" width="40px" height="40px" style="margin: 5px;">
+                            </div>
+                            <p class="perfExp"><span class="sub_hdxm">Journals</span> are threads of information posted by our journalists, sourced from the most reliable publishers on the internet and other trusted sources. These <span class="sub_hdxm">Journals</span> can also be posted by users or their friends, which can occupy pictures and bodies as text to express your experiences to friends and family. You can proper  to these <span class="sub_hdxm">Journals</span> by commenting, liking or even sharing them to your friends. And you can also tag your friends and family to a <span class="sub_hdxm">Journal</span>.</p>
+                            <div style="width: 60px; height: 60px;">
+                                <img src="img/newlog.png" alt="" width="40px" height="40px" style="margin: 5px;">
+                            </div>
+                            <p class="perfExp"><span class="sub_hdxm">- Categories </span> are displayed on the navigation panel where you can differentiate the Journals posted by our sources. But the Journals posted by your friends and families will be excluded when you are not on the <span class="sub_hdxm">Home</span> page. So click the <span class="sub_hdxm">Home</span> button when you want to get the general Feed.</p>
+                            <p class="perfExp"><span class="sub_hdxm">- Sub-Navigations</span> are aligned on the <span class="sub_hdxm">Home</span> page where you can explore, or check the most relevant items that are shopped on the internet.</p>
+                            <div style="width: 60px; height: 60px;">
+                                <img src="img/locate.png" alt="" width="24px" height="38px" style="margin: 5px;">
+                            </div>
+                            <p class="perfExp"><span class="sub_hdxm">- Locations</span> are used to categorize the information on the page, which is generally included by your country and continent.</p>
+                            <div style="width: 60px; height: 60px;">
+                                <img src="img/strings.png" alt="" width="40px" height="40px" style="margin: 5px;">
+                            </div>
+                            <p class="perfExp"><span class="sub_hdxm">- Strings</span> are threads of posts tied to each other. There two types of <span class="sub_hdxm">strings</span>:</p>
+                            <p class="perfExp"><span class="sub_hdxm">- Private Strings: </span> these are <span class="sub_hdxm">strings</span> that you can create but can only include posts from friends that you or your friends personally tie. But can be seen by the public.</p>
+                            <p class="perfExp"><span class="sub_hdxm">- Public Strings: </span> These are <span class="sub_hdxm">strings</span> that can contain all valid threads from all users that can be tied by a special keyword.</p>
+                            <img src="img/tut.3.5.png" alt="" width="90%" height="100%" style="margin: 5px; border-radius: 5px;">
+                            <p class="perfExp"><span class="sub_hdxm">- Threads</span> are posts tied to <span class="sub_hdxm">strings</span>. These must contain pictures, then a heading if necessary. <span class="sub_hdxm">Threads</span> can be interacted with like <span class="sub_hdxm">Journals</span>.</p>
+                            <div style="width: 60px; height: 60px;">
+                                <img src="img/chat.png" alt="" width="40px" height="40px" style="margin: 5px;">
+                            </div>
+                            <p class="perfExp"><span class="sub_hdxm">- Chat</span> with your friends on <span class="sub_hdxm">vyral</span><sup>TM</sup> </p>
+                            <div style="width: 60px; height: 60px;">
+                                <img src="img/shared.png" alt="" width="40px" height="40px" style="margin: 5px;">
+                            </div>
+                            <p class="perfExp"><span class="sub_hdxm">- Share</span> pictures and files with your friends.</p>
+                            <div style="width: 60px; height: 60px;">
+                                <img src="img/set.png" alt="" width="40px" height="40px" style="margin: 5px;">
+                            </div>
+                            <p class="perfExp"> You can edit your profile appearance and information and also change your username and other functionalities. </p>
+                            <img src="img/tut5.5.png" alt="" width="65%" height="100%" style="margin: 5px;">
+                            <p class="perfExp"><span class="sub_hdxm">- Privacy:</span> You can set your account to private which can avoid users whom you aren't following or whom aren't accepted to access your profile, posts and strings or threads.</p>
+                            <p class="perfExp"><span class="sub_hdxm">- Dark Mode:</span> You can also switch your theme from light to dark or vice-versa.</p>
+                            <br>
+                        </div>
+
+                        <!-- privacy policy -->
+                        <div class="allBodies" id="privPolBod" style="width: 100%; display: none;">
+                            <br>
+                            <p class="perfExp">This policy is to elaborate <span class="sub_hdxm">what</span>, <span class="sub_hdxm">why</span> and <span class="sub_hdxm">how</span> we extract and use data that are specified to signup on our platform.</p>
+                            <hr style="margin: 10px;">
+                            <p class="perfHd"> <span class="sub_hdxm">What</span> kinds of data do we request from users?</p>
+                            <ul>
+                                <li>Email</li>
+                                <li>Phone number</li>
+                                <li>Location</li>
+                                <li>Sex <span style="font-size: 10px;">(Gender)</span> </li>
+                                <li>Date of birth</li>
+                            </ul>
+                            <hr style="margin: 10px;">
+                            <p class="perfHd"> <span class="sub_hdxm" style="font-size: 18px;">Why</span> are these personal data required? </p>
+                            <div class="imp">
+                                <p class="perfExp"> <span style="font-size: 18px;">Email</span> </p>
+                                <hr style="width: 90%; margin: 5px;">
+                                <p class="perfExp">Usage of users emails are a necessity on our platform, especially for security purposes.</p>
+                                <p class="perfExp">Emails today, are regarded as your internet identity. Reasons are:</p>
+                                <ul>
+                                    <p style="font-size: 13px;"> - Users emails are used to verify a user’s identity, because our security protocol does not allow users to use the same email to signup for multiple account. This is to avoid impersonation and other fraudulent acts.</p>
+                                    <p style="font-size: 13px;"> - Secondly, users emails are used when users forget their passwords to make ease in securing and processing new password <a href="/forgot-password" style="text-decoration: none; color: skyblue;">(Go to forgot-password page)</a>.</p>
+                                    <p style="font-size: 13px;"> - Users emails are used to give users insights & updates, & security alerts.</p>
+                                    <p style="font-size: 13px;"> - Lastly, users emails are used to to track fraudsters and other internet abusers.</p>
+                                </ul>
+                            </div>
+                            <br style="margin: 5px;">
+                            <div class="imp">
+                                <p class="perfExp"> <span style="font-size: 18px;">Phone Number</span> </p>
+                                <hr style="width: 90%; margin: 5px;">
+                                <ul>
+                                    <p style="font-size: 13px;"> - Phone numbers are collected to represent a user’s identity other than emails if there's any problem with passwords.</p>
+                                    <p style="font-size: 13px;"> - Phone numbers are also used to communicate directly to users for updates and insight.</p>
+                                    <p style="font-size: 13px;"> - Lastly, phone numbers are also used to track fraudsters and other internet abusers.</p>
+                                </ul>
+                            </div>
+                            <br style="margin: 5px;">
+                            <div class="imp">
+                                <p class="perfExp"> <span style="font-size: 18px;">Location</span> </p>
+                                <hr style="width: 90%; margin: 5px;">
+                                <p class="perfExp">User location only consist of countries. Current location of users aren't tracked on this platform.</p>
+                                <ul>
+                                    <p style="font-size: 13px;"> - A person's location is taken to get specified news journals by vyral authors, either by their country, continent and internationally.</p>
+                                    <p style="font-size: 13px;"> - Locations can also categorizes the type of Journals posted by users friends within their country, continent or internationally.</p>
+                                </ul>
+                            </div>
+                            <br style="margin: 5px;">
+                            <div class="imp">
+                                <p class="perfExp"> <span style="font-size: 18px;">Sex (Gender)</span> </p>
+                                <hr style="width: 90%; margin: 5px;">
+                                <ul>
+                                    <p style="font-size: 13px;"> - User gender is collected to acknowledge the gender To represent user's sex to other users.</p>
+                                    <p style="font-size: 13px;"> - Genders are also used to regulate any attack or digital sexual harassment if the proprietor is reported to our administration for investigation.</p>
+                                </ul>
+                            </div>
+                            <br style="margin: 5px;">
+                            <div class="imp">
+                                <p class="perfExp"> <span style="font-size: 18px;">Date of birth</span> </p>
+                                <hr style="width: 90%; margin: 5px;">
+                                <ul>
+                                    <p style="font-size: 13px;"> - A users age can be used to regulate users on our platform due to certain types of information that may be shared. The age limit on vyral is either 13 or above.</p>
+                                    <p style="font-size: 13px;"> - Pedophiles have been maneuvering  through several platforms, users under 18 can regularly be supervised specially by intervening if the reports have been sent from their accounts.</p>
+                                </ul>
+                            </div>
+                            <hr style="margin: 10px;">
+                            <p class="perfHd"> <span class="sub_hdxm" style="font-size: 18px;">How</span> does vyral gain all of these information? </p>
+                            <div class="imp">
+                                <ul>
+                                    <li>Email</li>
+                                    <li>Phone number</li>
+                                    <li>Location</li>
+                                    <li>Sex <span style="font-size: 10px;">(Gender)</span> </li>
+                                    <li>Date of birth</li>
+                                </ul>
+                                <hr style="width: 90%; margin: 5px;">
+                                <p class="perfExp">All the listed information mentioned above are extracted and saved when a user is following the steps of signing-up on vyral.</p>
+                                <p class="perfExp">These information can also be updated by the user when he/she thinks it is not suitable for them.</p>
+                            </div>
+                            <br>
+                        </div>
+
+                        <!-- terms of services -->
+                        <div class="allBodies" id="TermSerBod" style="width: 100%; display: none;">
+                            <br>
+                            <p class="perfExp">The information bellow is a legal agreement every user must agree to before using our platform.</p>
+                            <p class="perfExp">These specify regulations applied between every user and the general vyral community. Both parties are to commit to the stated regulations. Any party that oppose these regulations has broken this agreement which may reach out to face legal punishment that may be assigned to breaking any of the stated information.</p>
+                            <hr style="margin: 10px;">
+                            <div class="imp">
+                                <p class="perfExp"> <span style="font-size: 18px;">Terms every user must agree to:</span> </p>
+                                <hr style="width: 90%; margin: 5px;">
+                                <ul>
+                                    <p style="font-size: 13px;"> - Every potential user may agree to signup the needed details that are generally requested from this platform.</p>
+                                    <p style="font-size: 13px;"> - Users must accept news and information posted by our BigJournal content creators and journalists. vyral is not a political platform. So, any news or information placed on this platform is not of any bias intention nor political interests.</p>
+                                    <p style="font-size: 13px;"> - Every user must agree to our <span style="color: skyblue; cursor: pointer;" id="goToComm">Community Guidelines</span>, by avoiding sharing of abusive, harassing or inappropriate  contents & messages. Multiple related reports regarding a user or post or messages of any kind might result to suspending the account or deletion to the ill-related post.</p>
+                                    <p style="font-size: 13px;"> - A user must comply with the usage of their location to apply for feed post categorizations. Regarding the Journals created by our content creators or posts from people regarding that region</p>
+                                    <p style="font-size: 13px;"> - User must agree to the allocation of his/her personal data given to Security Officials if any user is a suspect that is related to any form of criminal activity. Even though vyral is a free internet product, we shall not be a tool to any criminal or fraudulent activity.</p>
+                                </ul>
+                            </div>
+                            <hr style="margin: 10px;">
+                            <div class="imp">
+                                <p class="perfExp"> <span style="font-size: 18px;">We agree to comply to:</span> </p>
+                                <hr style="width: 90%; margin: 5px;">
+                                <ul>
+                                    <p style="font-size: 13px;"> - Be a free and fair platform; where all users may share their thoughts and experiences so long as it does not discriminate nor go against our <span style="color: skyblue; cursor: pointer;" id="goToComm">Community Guidelines</span>.</p>
+                                    <p style="font-size: 13px;"> - To not use, refurbish or publicly share any user's personal information. Unless upon requested.</p>
+                                    <p style="font-size: 13px;"> - To commute to be informed and noted to any type of complain or review that is reported by any user. And will put as much effort to take action.</p>
+                                    <p style="font-size: 13px;"> - To take down or result in punishing any content or content creator who's post is perceived  as bias or abusive to the community.</p>
+                                </ul>
+                            </div>
+                            <br>
+        
+                        </div>
+
+                        <!-- community guidelines -->
+                        <div class="allBodies" id="comGuiBod" style="width: 100%; display: none;">
+                            <br>
+                            <p class="perfExp">These are the general rules and regulations that every user must follow. Breaking any of these rules might lead to either suspension, deletion of any user or the reporting of a user to the law.</p>
+                            <p class="perfExp">vyral is a private company that is a product of a group of teams and creators which points out the fact that we own the right to set out certain rules on the platform. Users' rights are not to be opposed, if so, then it is not of our intention.</p>
+                            <p class="perfExp">Although, vyral is a free internet product that allows free speech and freedom to pursue any motion, there are certain guidelines that every user must follow in order to regulate and keep a safe and sound platform.</p>
+                            <p class="perfExp"> <span style="font-size: 18px;">Guidelines:</span> </p>
+                            <hr style="width: 90%; margin: 5px;">
+                            <ul>
+                                <p style="font-size: 13px;"> - Abusive contents or insults against users is not to be taken likely by vyral. Especially if several users are to report similar issues related to that user. This might also lead to suspension or deletion of such users</p>
+                                <p style="font-size: 13px;"> - Videos, images or any media file containing violence or gore are not to be posted on this platform.</p>
+                                <p style="font-size: 13px;"> - Sexual contents and nudity is against our principle. Any user subjected to this act might lead to suspension of user or deletion of the regarded post or user.</p>
+                                <p style="font-size: 13px;"> - If any user is to report another user of sexual harassment can lead to the submission of the suspected subject to the authorities if the user is to have a history of such acts or depending on the action by the prosecutor when investigated.</p>
+                                <p style="font-size: 13px;"> - Every user must socialize to minors in a sensible manner. For sexual predators are strongly existing in the internet today. Resulting in such act might also lead to suspension, deletion of user or user being subjected to the authority.</p>
+                                <p style="font-size: 13px;"> - vyral as a software was created by Ibrahim-Khalil Baba barau, co-founder of Beam Wares<sup style="font-size: 9px;">LTD</sup> and vyral<sup style="font-size: 9px;">TM</sup> as its product. The usage of vyral's source codes, concept or any given algorithm applied will be regarded of theft or breach of intellectual property rights.</p>
+                            </ul>
+                            <p style="font-size: 13px;"> So, any user may so forth surf through our platform with freedom of usage and respectfully use its contents & functionalities by our guidelines stated above.</p>
+                            <p style="font-size: 13px;"> Thank you!</p>
+                        </div>
+
+                        <!-- author account information -->
+                        <div class="allBodies" id="autInfoC" style="width: 100%; display: none;">
+                            <br>
+                            <p class="perfExp">An <span class="sub_hdxm">Author Account</span> is an account that can easily achievable by simply upgrading the average user account. This account allows users to create contents that can only be available to their subscribers.</p>
+                            <p class="perfExp">With this account upgrade, a user can:</p>
+                            <ul>
+                                <li>set a subscription fee before a user can have access to the account (or can simply leave it as free, which is the default)</li>
+                                <li>choose certain categories an individual wants their contents to be categorized by</li>
+                                <li>can upload books</li>
+                                <li>can upload posts as the average user as articles or contents for your subscribers</li>
+                            </ul>
+                            <p class="perfExp">All of these functionalities are achievable for free. We are only interested in 10% interest from any of a user's new subscription paid. All earnings, interests and charges made on an author account can be managed through settings.</p>
+                            <p class="perfExp">Other charges include payment and withdrawal charges which are both 1.55% each. Totaling: 3.10%.</p>
+                            <p class="perfExp">A user can upgrade to this account via settings or you can <a href="/publish" style="color: skyblue; text-decoration: none;">click here</a>.</p>
+                            <hr style="margin: 5px;">
+                            <p class="perfHd" style="margin: 5px;">How to's:</p>
+                            <div class="imp">
+                                <p class="perfExp">How to upload contents as an author?</p>
+                                <p style="margin:0px; padding:2px; font-size:14px;">Just like any other post, you can upload a journal or a book by clicking on the <img src="img/wa.png" width="12px" height="12px" style="margin:1px;"> button at the bottom left of the screen.
+                                <br>On the top right of the navigation bar, you will see a navigation button as a <img src="img/authand.png" width="12px" height="12px" style="margin:1px;">, which generally represent all author contents.</p>
+                                <hr style="width: 90%; margin: 5px;">
+                                <p class="perfExp">There are two types of upload-able contents on the author section: <span style="font-weight:normal;">Books</span> & <span style="font-weight:normal;">Journals</span>.</p>
+                                <p class="perfExp"> <span style="font-weight:normal;">Books</span> - in order to upload a content you may:</p>
+                                <p style="margin:0px; padding:2px; font-size:14px;"> - Include a cover image for the book</p>
+                                <p style="margin:0px; padding:2px; font-size:14px;"> - Input book title</p>
+                                <p style="margin:0px; padding:2px; font-size:14px;"> - On the bottom of the book section, a container is applied which includes a "Read Me" section, to apply all information regarding the books(Introduction, Index, glossary & so on. This section is optional).</p>
+                                <p style="margin:0px; padding:2px; font-size:14px;"> - Right after the read me toggle in the carousel, there is a <img src="img/addxs.png" width="12px" height="12px" style="margin:1px;"> icon, which allows you to add as much chapters for the book. All chapters must contain it's title and body which will be assigned bellow the carousel. You must have at least, one chapter in order to upload the contents</p>
+                                <p class="perfExp"> <span style="font-weight:normal;">Author Journals</span> - Just like an average Journal post, an author may upload Journal Contents, exclusively, for your subscriber.</p>
+                                <br>
+                            </div>
+                            <hr style="margin: 5px;">
+                            <p class="perfHd" style="margin: 5px;">Earnings:</p>
+                            <p class="perfExp">If an author account is not toggled on free mode, every payment made will be accessible by the author for viewing. On every account, there is a functionality called <span class="sub_hdxm">trackpod</span>. On this area an author can easily manage all transactions in a month or past year or any month that is currently running.
+                            <br>There an author can see all charges and interests that may be deducted from all transactions made as a subscription by all users.
+                            <br><br>Every author is expected to get their returns at the first week of every month. That is, as long as there have been payments made in the previous months. This does not exclude any payment that haven't been received  in the past by an author.
+                            <br><br>Be mindful  that any author that have gone against any of our community guidelines and terms of services may be suspended and earnings retracted if any of the contents on the author section of the account is seen as the culprit. Please, take this into serious consideration.</p>
+        
+                            <br>
+        
+                        </div>
+
+                        <!-- tech & opti -->
+                        <div class="allBodies" id="tecOptC" style="width: 100%; display: none;">
+                            <p class="perfExp"> A data driven application built on web-technology being fully reliant on the internet. Vyral is built on JavaScript libraries. Both on it's front and database interfaces.</p> 
+                            <div class="imp">
+                                <p>- JavaScript (ECMA, jQuery, JSON Objects, AJAX, Fetch)</p>
+                                <p>- Node.js serverside and npm modules</p>
+                                <p>- MongoDB</p>
+                            </div>
+                            <hr style="margin: 7.5px;">
+                            <p class="perfExp"> Interface/Architecture heavily designed to assess security measures for data transfer and communications. Algorithms built by our company, Beam Wares, applied for hashing certain details. Other encryptions to be applied in the works.</p> 
+                            <hr style="margin: 7.5px;">
+                            <p class="perfExp"> Our optimization algorithms have no self-benefit for our company, but built to ensure the best information being served to all users. our basic algorithm basically work on the go without any data saved to apprehend user interests, but actually bnuilt when data is being extracted</p> 
+                            <p class="perfExp"> These programs were built from ground up to execute the needed and intended functionalities.</p> 
+                            <hr style="margin: 7.5px;">
+                            <p class="perfExp"> Our communications factor for user interactions are also built entirely by our team. There are limited API's included, which exist, only due to necessary prospects.</p> 
+                            <p class="perfExp"> Chatbox created for text and image sharing build on an algorithm created to be more advanced by almost, if not all updates on the application.</p> 
+                            <hr style="margin: 7.5px;">
+                            <p class="perfHd">Applied Algorithms</p>
+                            <div class="imp">
+                                <p>- Eich-Hash: Password Encryption</p>
+                                <p>- Learning to Rank With Mathematical Optimization (LRMO): Data and information optimization</p>
+                                <p>- End to End Dilation (E2E Dilation): Chatbox communcations</p>
+                                <p>- Single Paged Application Architecture: Mobile Application Development</p>
+                            </div>
+                            <hr style="margin: 7.5px;">
+                            <p class="perfHd">API's, plugins, frameworks</p>
+                            <div class="imp">
+                                <p>- Node.js + Express and npm modules</p>
+                                <p>- MongoDB database</p>
+                                <p>- jQuery Library</p>
+                                <p>- Paystack Payment Gateway API</p>
+                                <p>- Bootstrap (Grid System and Interfaces)</p>
+                            </div>
+
+                        </div>
+        
+                        <!-- agree containe -->
+                        <div class="allBodies" id="comAgreeBod" style="width: 100%; display: none;">
+                            <br>
+                            <span clas="row" id="" style="margin-top:10px;">
+                                <div class="col-md-3"></div>
+                                <div class="col-md-6 col-xs-12">
+                                    <div style="width:100%; border:solid 0.6px #f0f0f0; border-radius:7px;">
+                                        <p style="margin:0px; padding:5px; color:#1a1a1a; font-size:15px;">I, user: <span class="myUnme" style="color: grey;"></span>, agree to the <span class="" style="color: skyblue;">Data Policy</span>, <span class="" style="color: skyblue;">Terms of Services</span> and also agree to adhere to the  <span class="" style="color: skyblue;">Community Guidelines</span> that have been included to serve as the legal rules and regulations and also as the agreement between me and vyral<sup>TM</sup>.</p>
+                                        <hr style="margin: 5px;">
+                                        <p style="margin:0px; padding:5px; text-align:center;">
+                                            <button class="btn btn-default btn-xs" style="border-radius:10px; color:darkorange; border:solid 1px darkorange;" id="AgreeToNew">I agree</button>
+                                        </p>
+                                    </div>
+                                </div>
+                                <div class="col-md-3"></div>
+                            </span>
+                            <br>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="col-xs-12 col-lg-12" style="height: 200px; background-color: #f9f9f9;">
+                        <br>
+                        <div style="width: 100px; height: 90px; margin: auto; background-image: url(img/bw3.png); background-size: 100% 100%; margin-top: 5px;"></div>
+                        <p style="text-align: center; margin: 5px; padding: 5px; color: grey; font-size: 14px;">A product of Beam Ware Limited</p>
+                        <p style="text-align: center; margin: 5px; padding: 5px; color: silver; font-size: 12.5px;">2023 &copy; </p>
+                    </div>
+                </div>
+
+            </div>
+            <div class="col-md-1"></div>
+        </div>
+
+    </div>
+    <script src="loader.js"></script>
+    <script src="guide.js"></script>
+  </body>
+</html>

@@ -1,0 +1,476 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+
+  <style media="screen">
+  #ind2, #ind2-xs {
+    display:none;
+  }
+  #mus2 {
+    display:none;
+  }
+  #pol2 {
+    display:none;
+  }
+  #spo2 {
+    display:none;
+  }
+  #ent2 {
+    display:none;
+  }
+  #fas2 {
+    display:none;
+  }
+  #bus2 {
+    display:none;
+  }
+  #peo2 {
+    display:none;
+  }
+  #art2 {
+    display:none;
+  }
+  #tic2 {
+    display:none;
+  }
+  #abt2 {
+    display:none;
+  }
+  #pro2 {
+    display:none;
+  }
+  @media only screen and (min-width: 610px) {
+    #flowbod {
+      height:480px;
+    }
+    #openFriends {
+      margin-top:-40px;
+    }
+    
+  }
+  @media only screen and (max-width: 600px) {
+    #flowbod {
+      height:100%;
+    }
+    #openFriends {
+      margin-top:-90px;
+    }
+    #profNavbar {
+      margin-top:10px;
+    }
+    #naverxs {
+      display: block;
+    }
+    
+  }
+  </style>
+
+<meta charset="utf-8">
+<meta name="robots" content="all,follow">
+<meta name="googlebot" content="index,follow,snippet,archive">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="description" content="beamtrends, beamtrends.com">
+<meta name="author" content="Khalil Baba">
+<meta name="keywords" content="beam, beamtrends, trends, beamtrends.com, beam wares, bt">
+
+<title>
+  vyral
+</title>
+<link rel="icon" href="img/log2.png" type="image/png">
+
+<meta name="keywords" content="">
+
+
+
+<!-- styles -->
+<link href="../css/font-awesome.css" rel="stylesheet">
+<link href="../css/bootstrap.min.css" rel="stylesheet">
+<link href="../css/animate.min.css" rel="stylesheet">
+<link href="../css/owl.carousel.css" rel="stylesheet">
+<link href="../css/owl.theme.css" rel="stylesheet">
+
+<!-- theme stylesheet -->
+<link href="../css/style.default.css" rel="stylesheet" id="theme-stylesheet">
+
+<!-- your stylesheet with modifications -->
+<link href="../css/custom.css" rel="stylesheet">
+<link href="../css/imgedits.css" rel="stylesheet">
+<link href="../css/load.css" rel="stylesheet">
+<link href="../css/chats.css" rel="stylesheet">
+<link href="../css/search.css" rel="stylesheet">
+<link href="../css/strings.css" rel="stylesheet">
+<link href="../css/reviewer.css" rel="stylesheet">
+
+<script src="../js/respond.min.js"></script>
+<!-- *** SCRIPTS TO INCLUDE ***
+_________________________________________________________ -->
+<script src="../js/jquery-1.11.0.min.js"></script>
+<script src="../js/bootstrap.min.js"></script>
+<script src="../js/jquery.cookie.js"></script>
+<script src="../js/waypoints.min.js"></script>
+<script src="../js/modernizr.js"></script>
+<script src="../js/bootstrap-hover-dropdown.js"></script>
+<script src="../js/owl.carousel.min.js"></script>
+<script src="../js/front.js"></script>
+
+<script src="../script/angular.js"></script>
+
+</head>
+<body style="font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; background-color: white; font-weight: lighter;">
+  <span id="dropLoading"></span>
+  
+  <div class="container-fluid">
+    <span id="dropChat"></span>
+  </div>
+  
+  <div class="container-fluid" id="container-one">
+      
+
+          <div class="row" id="hspan"></div>
+            
+        <!-- header done! -->
+        <div class="row" id="mainbod">
+
+            <!-- profile info -->
+            <div class="col-md-3 col-lg-3" id="profInfoCol">    
+              <div class="profbody" style="width:100%; height:100%; border-radius:5px;">
+                <div class="topProfon" style="width:100%; height:40px;">
+                  <p class="p_subHs" style="padding:5px; margin:0px; font-size:15px; float:left;">My details</p>
+                  <p style="float:right; font-size:10px; margin:5px; cursor:pointer;" class="editProfprofy pL_subHs">EDIT</p>
+                </div>
+                <div id="profpicdiv" class="" style="width:100px; height:100px; margin:auto; margin-top:10px; border-radius:100%;">
+                </div>
+                <p style="text-align: center; margin: 0px; padding:5px;"> <img id="verifTag" src="img/verification.png" width="15px" height="15px" alt="" style="display: none;"> </p>
+                <p class="profuname p_subHs" style="text-align:center; font-size:10px; margin:5px;"></p>
+                <p class="profusername pL_subHs" style="text-align:center; font-size:15px; margin:5px;"></p>
+                <p style="text-align:center; margin:0px; padding:3px;"> <a class="mailInf" href="" style="text-decoration:none;"> <img src="img/mail.png" width="15px" height="13px" alt=""> </a> </p>
+                <div class="statusdiv" style="height:100%; width:100%;">
+                  <p class="statusbod p_subHs" style="margin:5px; font-size:13px;"> </p>
+                </div>
+                <div style="width: 100%; height: 60px;">
+                  <p class="frndLen frnAr p_subHs" style="text-align: center; margin:0px; padding:1.5px; font-size:16px; cursor:pointer;"></p>
+                  <p class="frnAr pL_subHs" style="text-align: center; margin:0px; padding:1px; font-size:12.5px; cursor:pointer;">friends</p>
+                </div>
+              </div>
+            </div>
+            <!-- author profile info -->
+            <div class="col-md-4 col-lg-4 usrAutUiBodss" id="aithProfI" style="display: none;">
+              <div class="profbody" style="width:100%; height:100%; border-radius:5px;">
+                <div style="width: 100%; height: 230px;">
+                  <div id="autBckImgCon" style="height: 170px; width:100%; background-size: 100% 120%; border-top-right-radius: 5px; border-top-left-radius: 5px;">
+                    <br>
+                  </div>
+                  <div style="width: 95%; height: 160px; margin: auto; margin-top: -85px; position: absolute; z-index: 0;">
+                    <div style="width: 50%; height: 100%; float: left;">
+                      <div id="profPicdivA" style="width: 150px; height: 150px; float: left; margin: 10px; background-size: cover; border-radius: 5px; box-shadow: 0px 0px 20px -5px rgba(0, 0, 0, 0.107);"></div>
+                    </div>
+                    <div style="width: 50%; height: 100%; float: right;">
+                      <div style="height: 50px; width:92.5%; margin-top: 90px; float: left;">
+                        <p style="font-size:10px; margin:5px; cursor:pointer; float:right;" class="pL_subHs">
+                          <span style="font-size:10px; margin:5px; cursor:pointer;" class="editProfprofy pL_subHs">EDIT</span>
+                          <a class="mailInf" href="" style="text-decoration:none; margin:5px; margin-right: 15px;"> <img src="img/mail.png" width="20px" height="17.5px" alt=""> </a>
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+                  <div style="height: 50px; width:100%;">
+                  </div>
+                </div>
+                <br>
+                <p style="text-align:center; font-size:10px; margin:5px; margin-top:20px;" class="p_subHs"> <img id="usrAuth" class="" src="img/authand.png" width="15px" height="15px" alt="" style="background-color: transparent;"> <span class="profuname"></span> </p>
+                <p class="profusername pL_subHs" style="text-align:center; font-size:15px; margin:5px;"></p>
+                <div class="statusdiv" style="height:100%; width:100%;">
+                  <p class="statusbod p_subHs" style="margin:5px; font-size:13px; text-align:center;"> </p>
+                </div>
+                <div style="width: 100%; height: 50px;">
+                  <div style="height: 35px; width:50%; margin-top: 5px; float:left;" class="brd-rg">
+                    <p class="frndLen frnAr p_subHs" style="text-align: center; margin:0px; padding:1.5px; font-size:16px; cursor:pointer;"></p>
+                    <p class="frnAr pL_subHs" style="text-align: center; margin:0px; padding:1px; font-size:12.5px; cursor:pointer;">friends</p>
+                    <!--<p class="frnAr" style="text-align: center; margin:5px; padding:5px; cursor: pointer;"> 
+                      <img src="img/frnds.png" alt="" width="26.5px" height="20px" style="opacity: 0.8;">
+                      <span style="color: grey; font-size:13.5px; margin:5px;" class="frndLen"></span>
+                    </p>-->
+                  </div>
+                  <div style="height: 40px; width:50%; margin-top: 5px; float:left;">
+                    <p class="subAr subsLen subArBtns p_subHs" style="text-align: center; margin:0px; padding:1.5px; font-size:16px; cursor:pointer;"></p>
+                    <p class="subAr subArBtns pL_subHs" style="text-align: center; margin:0px; padding:1px; font-size:12.5px; cursor:pointer;">subscribers</p>
+                    <!--<p class="subAr" style="text-align: center; margin:5px; padding:5px; cursor: pointer;"> 
+                      <img src="img/subr.png" alt="" width="29.5px" height="20px" style="opacity: 0.8;">
+                      <span style="color: grey; font-size:13.5px; margin:5px;" class="frndLen"></span>
+                    </p>-->
+                  </div>
+                </div>
+                <div style="width: 85%; height:50px; border-radius: 10px; margin:auto; margin-top: 5px; margin-bottom: 5px; display: none; overflow-y: auto;" id="catsAttCon" class="usrAutUiBodss usrAutCats">
+                  <span class="drpCatsAtt"></span>
+                </div>
+              </div>
+            </div>
+
+            <!-- profile contents navigation here -->
+            <div class="col-md-5 col-lg-5"  id="profNavCol">
+                <div id="profNavbar" style="width:100%; height:35px; border-radius:5px;">
+                    <div id="chekcFrndsbtCon" style="width:50px; height:100%; float:left; margin-right:2.5%;">
+                      <div id="setAr" style="width:20px; height:25px; margin:auto; margin-top:3.5px; cursor:pointer;">
+                        <img src="img/set.png" alt="" width="100%" height="20">
+                      </div>
+                    </div>
+                    <div id="adsAr" style="width:25px; height:25px; float:left; margin-left:10%; margin-top:3.5px; display:none;">
+                            <img src="img/read.png" alt="" width="100%" height="20px">
+                    </div>
+                    <div id="mediaAr" style="width:20px; height:25px; float:left; margin-left:10%; margin-top:3.5px; cursor:pointer;">
+                        <img src="img/read.png" alt="" width="100%" height="20px">
+                    </div>
+                    <div id="strAr" style="width:20px; height:25px; float:left; margin-left:10%; margin-top:3.5px; cursor:pointer;">
+                        <img src="img/strings.png" alt="" width="100%" height="20px">
+                    </div>
+                    <div id="autAr" style="width:20px; height:25px; float:left; margin-left:10%; margin-top:3.5px; cursor:pointer; display: none;" class="usrAutUiBodssN">
+                      <img src="img/authand.png" alt="" width="100%" height="20px">
+                    </div>
+                </div>
+                <br>
+                
+                <div id="flowbod" style="width:100%; border-radius:5px; overflow-y:auto;">
+                  
+                  <!-- info flow area -->
+                  <div id="myflow" style="width:100%;">
+                    <div style="width:100%; height:70px;">
+                      <div style="height:30px; width:100%;">
+                        <p style="text-align:center; color:grey; font-size:12.5px; margin:0px; padding:5px;"> <img src="img/read.png" width="13px" height="13px" style="margin-top:-2.5px; margin-right:5px;"> reads <span style="color:orange; font-size:14px;" id="myReadsLen">0</span> </p>
+                      </div>
+                      <div style="width:50%; float:left; height:40px;">
+                        <div id="seeFlow" style="width:50px; height:25px; margin:auto; margin-top:5px; cursor:pointer; border-bottom:solid 2px darkorange;">
+                          <p style="text-align: center; margin: 0px; padding: 2px;" class="p_subHs">seen</p>
+                        </div>
+                      </div>
+                      <div style="width:50%; float:left; height:40px;">
+                        <div id="hidFlow" style="width:65px; height:25px; margin:auto; margin-top:5px; cursor:pointer;">
+                          <p style="text-align: center; margin: 0px; padding: 2px;" class="p_subHs">hidden</p>
+                        </div>
+                      </div>
+                    </div>
+                    <!-- hide and see nav above -->
+
+                    
+                      <div id="seeBodCon" style="width:100%;">
+
+                        <div id="checknum-j" style="margin:auto; width:150px; cursor:pointer;">
+                          <div  style="margin:auto; width:70px; cursor:pointer;">
+                            <img src="img/addxs.png" alt="" width="100%" height="70px">
+                          </div>
+                          <p style="margin:5px; font-size:12px; text-align:center;" class="p_subHs"> <strong style="font-size:15px;">+</strong> Add Posts</p>
+                        </div>
+
+                        <span id="dropbox-jr"></span>
+
+                      </div>
+
+                      <div id="hidBodCon" style="width:100%; display:none;">
+                        <p style="font-size:14px; margin:5px; text-align:center;" class="p_subHs">Hidden posts <img src="img/lock.png" alt="" width="13px" height="13px"></p>
+                        
+                        <div id="checknum-hd" style="margin:auto; width:150px; cursor:pointer;">
+                          <br>
+                          <p style="margin:5px; font-size:12px; text-align:center;" class="p_subHs"> You have no hidden post </p>
+                        </div>
+
+                        <span id="dropbox-hd"></span>
+
+                      </div>
+
+                  </div>
+
+                    <!-- string flow area -->
+                    <div id="mystr" style="width:100%; display:none;">
+                      <div style="width:100%; height:40px;">
+                        <div style="width:50%; float:left; height:100%;">
+                          <div id="thrFlwOpn" style="width:70px; height:30px; margin:auto; margin-top:5px; cursor:pointer; border-bottom:solid 2px darkorange;">
+                            <p style="text-align: center; margin: 0px; padding: 2px;" class="p_subHs">threads</p>
+                          </div>
+                        </div>
+                        <div style="width:50%; float:left; height:100%;">
+                          <div id="strFlwOpn" style="width:70px; height:30px; margin:auto; margin-top:5px; cursor:pointer;">
+                            <p style="text-align: center; margin: 0px; padding: 2px;" class="p_subHs">strings</p>
+                          </div>
+                        </div>
+                      </div>
+                      
+                      <!-- thr str -->
+                      <div id="thrFlowCon">
+                        <div id="checknum-t" style="margin:auto; width:150px; cursor:pointer;">
+                            <div  style="margin:auto; width:70px; cursor:pointer;">
+                                <img src="img/addxs.png" alt="" width="100%" height="70px">
+                              </div>
+                                <p style="margin:5px; font-size:12px; text-align:center;" class="p_subHs"> <strong style="font-size:15px;">+</strong> Add threads</p>
+                        </div>
+  
+                        <span id="dropbox-thr"></span>
+                      </div>
+
+                      <!-- flow str -->
+                      <div id="strFlowCon" style="display: none;">
+                        <div id="checknum-s" style="margin:auto; width:150px; cursor:pointer;">
+                            <div  style="margin:auto; width:70px; cursor:pointer;">
+                                <img src="img/addxs.png" alt="" width="100%" height="70px">
+                              </div>
+                                <p style="margin:5px; font-size:12px; text-align:center;" class="p_subHs"> <strong style="font-size:15px;">+</strong> Add Strings</p>
+                        </div>
+                        <span id="dropbox-str"></span>
+                      </div>
+
+                    </div>
+
+                    <!-- author contents -->
+                    <div id="myAutc" style="width: 100%; display: none;">
+                      <br>
+
+                      <div id="checknum-autC" style="margin:auto; width:150px; cursor:pointer; display: none;">
+                        <div  style="margin:auto; width:70px; cursor:pointer;">
+                          <img src="img/addxs.png" alt="" width="100%" height="70px">
+                        </div>
+                        <p style="margin:5px; color:grey; font-size:12px; text-align:center;" class="p_subHs"> <strong style="font-size:15px;">+</strong> Add contents</p>
+                      </div>
+
+                      <span id="dropbox-paut"></span>
+
+                      <br>
+                    </div>
+
+                    <!-- settings area -->
+                    <div id="myset" style="width:100%; display:none;">
+
+                            <div class="" id="editprofilebut" style="width:100%; height:30px; margin-top:5px; cursor:pointer;">
+                              <p class="p_subHs" style="margin:5px; font-size:15px;">Edit profile</p>
+                            </div>
+                            <div class="" id="editprofile" style="width:100%; display:none;">
+                              <!-- edit status div -->
+                              <div class="p_subHs" id="editstat" style="width:100%; height:25px; cursor:pointer;">
+                                <p class="p_subHs" style="padding:5px; margin:0px; font-size:13px;">Edit Status</p>
+                              </div>
+                              <!-- edit profile name div -->
+                              <div class="p_subHs" id="editname" style="width:100%; height:25px; margin-top:5px; cursor:pointer;">
+                                <p class="p_subHs" style="padding:5px; margin:0px; font-size:13px;">Edit profile name</p>
+                              </div>
+                              <!-- edit profile pic div -->
+                              <div class="p_subHs" id="editpic" style="width:100%; height:25px; margin-top:5px; cursor:pointer;">
+                                <p class="p_subHs" style="padding:5px; margin:0px; font-size:13px;">Edit profile picture</p>
+                              </div>
+                              <!-- edit username div -->
+                              <div class="p_subHs" id="chngusr" style="width:100%; height:25px; margin-top:5px; cursor:pointer;">
+                                <p class="p_subHs" style="padding:5px; margin:0px; font-size:13px;">Change username</p>
+                              </div>
+                              <!-- edit password div -->
+                              <div class="p_subHs" id="chngpss" style="width:100%; height:25px; margin-top:5px; cursor:pointer;">
+                                <p class="p_subHs" style="padding:5px; margin:0px; font-size:13px;">Change password</p>
+                              </div>
+                              <!-- edit email div
+                              <div class="" id="chngeml" style="width:100%; height:25px; margin-top:5px; cursor:pointer;">
+                                <p style="padding:5px; margin:0px; font-size:13px;">Change email</p>
+                              </div> -->
+                              <!-- edit email div -->
+                              <div id="privarea" class="" style="width:100%; height:25px; margin-top:5px;">
+                                <p class="p_subHs" style="padding:5px; margin:0px; font-size:13px; float:left;">Private account</p>
+                                <div id="privAlign" style="float:right; width:40px; height:15px; margin:3px; border-radius:5px;">
+                                  <div id="privbuton" class="" style="width:20px; height:20px; background-color:#dddddd; margin-top:-3px; border:solid 0.5px #dddddd; border-radius:100%; cursor:pointer; float:left;">
+                     
+                                  </div>
+                                  <div id="privbutoff" class="" style="width:20px; height:20px; background-color:skyblue; margin-top:-3px; border:solid 0.5px #dddddd; border-radius:100%; cursor:pointer; float:right; display:none;">
+                     
+                                  </div>
+                                </div>
+                              </div>
+                              <!-- xs dark-mode -->
+                              <div id="darkXsarea" class="" style="width:100%; height:25px; margin-top:5px;">
+                                <p class="p_subHs" style="padding:5px; margin:0px; font-size:13px; float:left;">Dark Mode</p>
+                                <div id="darkXsCon" style="float:right; width:40px; height:15px; margin:3px; border-radius:5px;">
+                                  <div id="darkXsOn" class="" style="width:20px; height:20px; background-color:#dddddd; margin-top:-3px; border:solid 0.5px #dddddd; border-radius:100%; cursor:pointer; float:left;">
+                     
+                                  </div>
+                                  <div id="darkXsOff" class="" style="width:20px; height:20px; background-color:skyblue; margin-top:-3px; border:solid 0.5px lightblue; border-radius:100%; cursor:pointer; float:right; display:none;">
+                     
+                                  </div>
+                                </div>
+                              </div>
+                              <!-- delete account div -->
+                              <div class="" id="delacc" style="width:100%; height:25px; margin-top:5px; cursor:pointer;">
+                                <p style="margin:5px; font-size:12px; color:red;">Terminate Account</p>
+                              </div>
+                              <p style="text-align:center; margin-top:5px; margin-bottom:10px; cursor:pointer;">
+                                <img id="doneedit" src="img/up.png" alt="" width="25px" height="15px">
+                              </p>
+                            </div>
+                            <!-- edit profile div done done -->
+                     
+                            <!--<div class="" id="openprofad" style="width:100%; height:30px; border-bottom:solid 1px #f0f0f0; margin-top:5px; cursor: pointer;">
+                              <p style="margin:5px; font-size:15px;">Promotions</p>
+                            </div>
+                            <div class="" id="profadsselectdiv" style="width:100%; display:none;">
+                              <i style="margin:10px;" class="p_subHs">Select Category:</i>
+                              <div class="" onclick="FuncCatMus()" id="choosemus" style="width:100%; height:25px; border-bottom:solid 1px #f0f0f0; margin-top:5px;">
+                                <p id="catval" style="padding:5px; margin:0px; font-size:13px;">Music</p>
+                              </div>
+                              <div class="" onclick="FuncCatFas()" id="choosefas" style="width:100%; height:25px; border-bottom:solid 1px #f0f0f0; margin-top:5px;">
+                                <p id="catval" style="padding:5px; margin:0px; font-size:13px;">Fashion</p>
+                              </div>
+                              <div class="" onclick="FuncCatBus()" id="choosebus" style="width:100%; height:25px; border-bottom:solid 1px #f0f0f0; margin-top:5px;">
+                                <p id="catval" style="padding:5px; margin:0px; font-size:13px;">Business</p>
+                              </div>
+                              <div class="" onclick="FuncCatSpo()" id="choosespo" style="width:100%; height:25px; border-bottom:solid 1px #f0f0f0; margin-top:5px;">
+                                <p id="catval" style="padding:5px; margin:0px; font-size:13px;">Sports</p>
+                              </div>
+                              <div class="" onclick="FuncCatEnt()" id="chooseent" style="width:100%; height:25px; border-bottom:solid 1px #f0f0f0; margin-top:5px;">
+                                <p id="catval" style="padding:5px; margin:0px; font-size:13px;">Entertainment</p>
+                              </div>
+                              <div class="" onclick="FuncCatArt()" id="chooseart" style="width:100%; height:25px; border-bottom:solid 1px #f0f0f0; margin-top:5px;">
+                                <p id="catval" style="padding:5px; margin:0px; font-size:13px;">Art</p>
+                              </div>
+                              <div class="" id="stopad" onclick="UnsubScribe()" style="width:100%; height:25px; border-bottom:solid 1px #f0f0f0; margin-top:5px; display:none;">
+                                <p style="padding:5px; margin:0px; font-size:13px; color:red;">Unsubscribe</p>
+                              </div>
+                              <p style="text-align:center; margin-top:5px; margin-bottom:10px; cursor:pointer;">
+                                <img id="doneedit" src="img/up.png" alt="" width="25px" height="15px">
+                              </p>
+                            </div>-->
+                            <!-- Open prof-ad done -->
+
+                            <!-- publishsing  -->
+                            <div class="" id="openPublishSet" style="width:100%; height:30px; border-bottom:solid 1px #f0f0f0; margin-top:5px; cursor: pointer;">
+                              <p style="margin:5px; font-size:15px;" id="pblsSP"></p>
+                            </div>
+                     
+                            <div id="logout" style="width:100%; height:25px; margin-top:5px; cursor:pointer;">
+                              
+                              <p style="margin:5px; font-size:13px; color:red;" id="logOutMal">Logout</p>
+                              <script>
+                                $('#logOutMal').click(function(){
+                                  $('#logOutMain').click();
+                                });
+                              </script>
+                            </div>
+                              
+                    </div>
+                    
+                </div>
+
+            </div>
+
+            <!-- chat area/who to follow area -->
+            <div class="col-md-3 col-xs-12">
+              <span id="chats-pc"></span>
+              <span id="lsts-pc"></span>
+            </div>
+            <br><br>
+
+        </div>
+        
+    </div>
+    <script src="https://js.paystack.co/v1/inline.js"></script>
+    <span id="drp-scrpts"></span>
+    <script src="loader.js"></script>
+    <script src="scrpt.js"></script>
+    <script src="alerts.js"></script>
+    <script type="module" src="profile.js"></script>
+    <script type="module" src="gateway.js"></script>
+    <script type="module" src="optimize.js"></script>
+    <script type="module" src="post.js"></script>
+    <script type="module" src="string.js"></script>
+  </body>
+</html>

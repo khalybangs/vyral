@@ -1,0 +1,403 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+
+  <style media="screen">
+    @media only screen and (min-width: 610px) {
+      #srcsMC {
+        height: 600px;
+      }
+    }
+    @media only screen and (max-width: 600px) {
+      
+    }
+  </style>
+
+<meta charset="utf-8">
+<meta name="robots" content="all,follow">
+<meta name="googlebot" content="index,follow,snippet,archive">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="description" content="beamtrends, beamtrends.com">
+<meta name="author" content="Khalil Baba">
+<meta name="keywords" content="beam, beamtrends, trends, beamtrends.com, beam wares, bt">
+
+<title>
+    threadal author
+</title>
+<link rel="icon" href="../img/wa.png" type="image/png">
+
+<meta name="keywords" content="">
+
+
+
+<!-- styles -->
+<link href="../css/font-awesome.css" rel="stylesheet">
+<link href="../css/bootstrap.min.css" rel="stylesheet">
+<link href="../css/animate.min.css" rel="stylesheet">
+<link href="../css/owl.carousel.css" rel="stylesheet">
+<link href="../css/owl.theme.css" rel="stylesheet">
+
+
+<!-- theme stylesheet -->
+<link href="../css/style.default.css" rel="stylesheet" id="theme-stylesheet">
+
+<!-- your stylesheet with modifications -->
+<link href="../css/custom.css" rel="stylesheet">
+<link href="../css/imgedits.css" rel="stylesheet">
+
+<script src="../js/respond.min.js"></script>
+
+<!-- *** SCRIPTS TO INCLUDE ***
+_________________________________________________________ -->
+<script src="../js/jquery-1.11.0.min.js"></script>
+<script src="../js/bootstrap.min.js"></script>
+<script src="../js/jquery.cookie.js"></script>
+<script src="../js/waypoints.min.js"></script>
+<script src="../js/modernizr.js"></script>
+<script src="../js/bootstrap-hover-dropdown.js"></script>
+<script src="../js/owl.carousel.min.js"></script>
+<script src="../js/front.js"></script>
+
+<script src="../script/angular.js"></script>
+
+</head>
+<body style="font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; background-color:#f0f0f0;">
+  <div class="container-fluid">
+    <span id="dropChat"></span>
+  </div>
+    <div class="container-fluid" id="container-one">
+    
+        <div class="row">
+            <div class="col-xs-12 clearfix visible-xs" style="position: fixed; z-index: 3; height: 40px; background-color: white; box-shadow: 0px 0px 10px -5px rgba(0, 0, 0, 0.4);">
+              <div style="width: 100%; height: 100%; overflow-x: auto;">
+                <div style="width: 1000px; height: 100%;">
+                  <p style="float: left; margin: 0px; padding: 5px; font-size: 20px;"><span style="color:orange;">Big</span><span style="color:grey;">Journal</span> <img src="../img/wa.png" alt="" width="18px" height="20px"></p>
+                  <button id="navXOne" class="btn btn-xs nav_btns" style="float:left; margin:7px; background-color: darkorange; color: white; font-weight: normal; border: none; border-radius: 15px; height: 27px;">Write Journal</button>
+                  <button id="navXTwo" class="btn btn-xs nav_btns" style="float:left; margin:7px; background-color: transparent; color: darkorange; font-weight: normal; border: solid 1px darkorange; border-radius: 15px; height: 27px;">Sources</button>
+                  <button id="navXThree" class="btn btn-xs nav_btns" style="float:left; margin:7px; background-color: transparent; color: darkorange; font-weight: normal; border: solid 1px darkorange; border-radius: 15px; height: 27px;">Journals</button>
+                  <button id="navXFour" class="btn btn-xs nav_btns" style="float:left; margin:7px; background-color: transparent; color: darkorange; font-weight: normal; border: solid 1px darkorange; border-radius: 15px; height: 27px;">Profile</button>
+                  <button id="logOutAutX" class="btn btn-xs" style="float:left; margin:7px; background-color: transparent; color: orangered; font-weight: normal; border: solid 1px #f0f0f0; border-radius: 15px; height: 27px;">Logout</button>
+                </div>
+              </div>
+            </div>
+            <div class="col-xs-12 clearfix visible-xs" style="height: 50px;"></div>
+            <div class="col-lg-3 clearfix visible-lg" style="height:500px; background-color:#f9f9f9;">
+              <br>
+
+              <p style="font-size:20px; text-align:center;"><span style="color:orange;">Big</span><span style="color:grey;">Journal</span> <img src="../img/wa.png" alt="" width="18px" height="20px"></p>
+              <div style="width:65px; height:65px; margin:auto;">
+                <img src="../img/log2.png" width="100%" height="100%" alt="">
+              </div>
+              <p style="color:silver; font-size:25px; text-align:center;">threadal</p>
+
+              <!-- navbar bellow -->
+              <div class="row">
+                <div class="col-lg-12" style="height:38px; background-color:orange; cursor:pointer; color:white;" id="navOne">
+                  <p style="margin:0px; padding:10px; text-align:center;">Write Journal</p>
+                </div>
+                <div class="col-lg-12" style="height:38px; background-color:white; cursor:pointer; color:silver;" id="navTwo">
+                  <p style="margin:0px; padding:10px; text-align:center;">Sources</p>
+                </div>
+                <div class="col-lg-12" style="height:38px; background-color:white; cursor:pointer; color:silver;" id="navThree">
+                    <p style="margin:0px; padding:10px; text-align:center;">Journals</p>
+                  </div>
+                <div class="col-lg-12" style="height:38px; background-color:white; cursor:pointer; color:silver; margin-bottom: 10px;" id="navFour">
+                  <p style="margin:0px; padding:10px; text-align:center;">Profile</p>
+                </div>
+                <p style="text-align: center; color: orangered; font-size: 12.5px; margin: 0px; padding: 10px; cursor:pointer;" id="logOutAut">Logout</p>
+              </div>
+
+              <br>
+            </div>
+            <div class="col-lg-9">
+
+              <!-- nav bodies -->
+              <div class="row">
+
+                <!-- write journal area -->
+                <div class="col-lg-12" style="background-color:white; border-left:solid 1px #dddddd; border-bottom:solid 1px #dddddd; height:600px; overflow-y: auto;" id="navOneBod">
+                  
+                  <div style="width:100%; height:100%;">
+                    <br>
+                    <!--<div style="width:100%; height:35px; border-bottom:solid 1px #f0f0f0;">
+                      <p style="padding: 5px; margin: 0px;">
+                        <button id="cartsGo" class="btn btn-info btn-xs">categories</button>
+                        <button id="topsGo" class="btn btn-default btn-xs">top shop</button>
+                      </p>
+                    </div>-->
+
+                    <div id="cartBod">
+                      <i style="color:silver;">Insert cartegor(ies)y: </i>
+                      <div class="row">
+                        <div class="col-lg-6 col-xs-10">
+                          <div id="slsctCatsCon" style="width: 100%; height: 125px; background-color: #f0f0f0; border-radius: 10px; margin-top: 10px; overflow-y: auto;">
+                              <span id="dropCats"></span>
+                          </div>
+                        </div>
+                      </div>
+                      <div style="width: 100%; display: none;" id="chsCatsCon">
+                          <p style="color: grey; font-size: 16.5px; margin:0px; padding: 5px;"> <span style="color: rgb(255, 149, 0); font-size: 22.5px;" id="chCatsNo"></span>/5 </p>
+                          <div style="width: 45%; height: 50px; background-color: #f9f9f9; border-radius: 10px; margin-top: 10px; overflow-y: auto;">
+                              <span id="dropChsCats"></span>
+                          </div>
+                      </div>
+                      <br>
+                      <i style="color:silver;">Insert location-type: </i>
+                      <select name="" id="locType" style="margin:5px; width:50%; margin:5px; border:solid 1px #f0f0f0; font-size:18px; color:orange;"> 
+                      </select>
+                      <br>
+                      <i style="color:silver;">Insert Journal type: </i>
+                      <select name="" id="journalType" style="margin:5px; width:50%; margin:5px; border:solid 1px #f0f0f0; font-size:18px; color:orange;"> 
+                        <option>News</option>
+                        <option>Article</option>
+                      </select>
+                      <hr style="margin:5px;">
+                      <input type="text" name="" id="bjHead" placeholder="Heading" style="margin:5px; width:40%; border:solid 1px #f0f0f0; border-radius:5px;">
+                      <br>
+                      <textarea name="" id="bjBody" placeholder="body" style="width:40%; border:solid 1px #f0f0f0; border-radius:5px; margin:5px;"></textarea>
+                      <hr style="margin:5px;">
+                      <input type="text" name="" id="bjsrc" placeholder="Insert source" style="width:40%; border:none; background-color:transparent; border-bottom:solid 1px #f0f0f0; margin:5px;">
+                      <br>
+                      <input type="text" name="" id="bjsrcpg" placeholder="Insert sourrce ref-page" style="width:40%; border:none; background-color:transparent; border-bottom:solid 1px #f0f0f0; margin:5px;">
+                      <hr style="margin:5px;">
+                      <div style="width: 100%;">
+                        
+                        <!-- choose file area -->
+                        <div style="width: 80%; margin: auto; border:solid 1px #f0f0f0; border-radius: 5px;" id="chseFltp">
+                          <br>
+                          <!-- img && vid poster -->
+                          <form action="/post/fileUpload" method="post" enctype="multipart/form-data" style="display:none;">
+                              <input type="file" name="file" id="postImageAut" accept="image/*" multiple>
+                          </form>
+                          <form action="/video/videoUpload" method="post" enctype="multipart/form-data" style="display:none;">
+                              <input type="file" name="file" id="postVideoAut" accept="video/*">
+                          </form>
+                          <div style="width:100%; height: 140px; margin:auto;" id="chseFltp">
+                            <div id="fileTpeCon-jrn" style="margin-top:10px; width:140px; margin:auto;">
+                                <img src="img/imgtype.png" width="50px" height="60px" style="float:left; cursor:pointer; margin:5px;" id="ClickImgInAut">
+                                <img src="img/vids.png" width="50px" height="60px" style="float:right; cursor:pointer; margin:5px;" id="clickVidJrnAut">
+                            </div>
+                          </div>
+                          <br>
+                        </div>
+  
+                        <!-- img reviewer -->
+                        <div class="row scrlimgCon" id="scrlimgCon-aut" style="width:50%; margin:auto; border-radius:5px; border:solid 1px #f0f0f0; display:none;">
+                          <div class="closeImgFlwCon" id="closeImgFlwCon-jrn" style="width:98%; height:25px; margin:auto;">
+                              <p style="text-align:center; color:orangered; margin:5px; cursor: pointer;" id="can_rev">cancel</p>
+                          </div>
+                          <br>
+                          <span id="flowHangerFltrd-aut"></span>
+                        </div>
+  
+                      </div>
+                      <br>
+                      <button class="btn btn-default btn-sm" style="margin:5px;" id="postJourn">Post</buttn>
+                    </div>
+
+                    <div id="topsBod" style="display: none;">
+
+                      <br>
+                      <i style="color:silver;">Insert location-type: </i>
+                      <select name="" id="locTypeTop" style="margin:5px; width:50%; margin:5px; border:solid 1px #f0f0f0; font-size:18px; color:orange;"> 
+                      </select>
+                      <br>
+                      <i style="color:silver;">Insert currency type: </i>
+                      <select name="" id="currencyType" style="margin:5px; width:50%; margin:5px; border:solid 1px #f0f0f0; font-size:18px; color:orange;"> 
+                        <option>Naira</option>
+                        <option>Dollar</option>
+                      </select>
+                      <hr style="margin:5px;">
+                      <input type="text" name="" id="topHead" placeholder="product name" style="margin:5px; width:40%; border:solid 1px #f0f0f0; border-radius:5px;">
+                      <br>
+                      <input type="number" name="" id="topPrice" placeholder="price" style="margin:5px; width:40%; border:solid 1px #f0f0f0; border-radius:5px;">
+                      <hr style="margin:5px;">
+                      <input type="text" name="" id="topsrc" placeholder="Insert source" style="width:40%; border:none; background-color:transparent; border-bottom:solid 1px #f0f0f0; margin:5px;">
+                      <br>
+                      <input type="text" name="" id="topsrcpg" placeholder="Insert sourrce ref-page" style="width:40%; border:none; background-color:transparent; border-bottom:solid 1px #f0f0f0; margin:5px;">
+                      <hr style="margin:5px;">
+
+                      <!-- img && vid poster -->
+                          <form action="/post/fileUpload" method="post" enctype="multipart/form-data" style="display:none;">
+                              <input type="file" name="file" id="postImageTop" accept="image/*" multiple>
+                          </form>
+                          <form action="/video/videoUpload" method="post" enctype="multipart/form-data" style="display:none;">
+                              <input type="file" name="file" id="postVideoTop" accept="video/*">
+                          </form>
+
+                      <div style="width:50%; height: 100px; margin:auto;" id="chseFltp-top">
+                        <div id="fileTpeCon-top" style="margin-top:10px; width:140px; margin:auto;">
+                            <img src="img/imgtype.png" width="50px" height="60px" style="float:left; cursor:pointer; margin:5px;" id="ClickImgInTop">
+                            <img src="img/vids.png" width="50px" height="60px" style="float:right; cursor:pointer; margin:5px;" id="clickVidJrnTop">
+                        </div>
+                      </div>
+
+                      <!-- img reviewer -->
+                      <div class="row scrlimgCon" id="scrlimgCon-top" style="width:50%; height:200px; overflow-y: auto; margin:auto; border-radius:5px; border:solid 1px #f0f0f0; display:none;">
+                        <div class="closeImgFlwCon" id="closeImgFlwCon-top" style="width:98%; height:25px; margin:auto;">
+                            <p style="text-align:center; color:orangered; margin:5px; cursor: pointer;">cancel</p>
+                        </div>
+                        <br>
+                        <span id="flowHangerFltrd-autops"></span>
+                      </div>
+
+                      <br>
+                      <button class="btn btn-default btn-sm" style="margin:5px;" id="postTop">Post</buttn>
+                    </div>
+
+                    <br>
+                  </div>
+                  <br>
+                </div>
+
+                <!-- sources -->
+                <div class="col-lg-12" style="background-color:#f9f9f9; border-left:solid 1px #dddddd; border-bottom:solid 1px #dddddd; height:600px; display:none; overflow-y: auto; overflow-y: auto;" id="navTwoBod">
+                  <div class="row" style="height: 100%;">
+                    <br>
+                    <div id="addNSrcC" class="col-lg-4 col-xs-12">
+                      <div style="width: 100%; height: 140px; border-radius: 10px; background-color: white; box-shadow: 0px 0px 10px -5px rgba(0, 0, 0, 0.361); margin-top: 5px; margin-bottom: 10px;">
+                        <p style="margin:0px; padding:3px; color:silver; font-size: 13.5px;">add new source</p>
+                        <input id="srcIn" type="text" style="width: 90%; margin: 5px; border:none; background-color: transparent; border-bottom: solid 1px #dddddd; height: 28px;" placeholder="link" name="" id="">
+                        <input id="srcTtlIn" type="text" style="width: 90%; margin: 5px; border:none; background-color: transparent; border-bottom: solid 1px #dddddd; height: 28px;" placeholder="title" name="" id="">
+                        <p id="addSrc" style="text-align: center; margin: 0px; padding: 3px; color: grey; cursor: pointer;"> add source <img src="img/addPlaylists.png" alt="" width="15px" height="15px"> </p>
+                      </div>
+                    </div>
+                    <div id="srcsMC" class="col-lg-8 col-xs-12">
+                      <div style="width: 100%; height: 95%; border-radius: 10px; background-color: white; border: solid 1px #f0f0f0; margin-top: 5px; margin-bottom: 10px; overflow-y: auto;">
+                        <br>
+                        <span id="dispSrcs"></span>
+                        <br>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                <!-- journal flow area -->
+                <div class="col-lg-12" style="background-color:white; border-left:solid 1px #dddddd; border-bottom:solid 1px #dddddd; height:600px; display:none; overflow-y: auto;" id="navThreeBod">
+                  <div class="row">
+                    <div class="col-lg-12" style="background-color:white; border-bottom:solid 1px #f0f0f0; height:50px; overflow-y: auto;">
+                      <div style="width: 3500px;">
+                        <p style="margin:5px;" id="cartNav">
+                          
+                        </p>
+                      </div>
+                    </div>
+
+                    <!-- sports journal flow -->
+                    <div class="col-lg-3"></div>
+                    <div class="col-lg-6" style="background-color:#f9f9f9; border-right:solid 1px #f0f0f0; border-left:solid 1px #f0f0f0; height:549px; overflow-y:auto;" id="">
+                      <br>
+
+                      <span id="dropCatBods"></span>
+                      
+                      <br>
+                    </div>
+                    <!--<div class="col-lg-6" style="background-color:#f9f9f9; border-right:solid 1px #f0f0f0; border-left:solid 1px #f0f0f0; height:549px; overflow-y:auto; display:none;" id="sportsFlow">
+                      <br>
+
+                      <span id="dropSports"></span>
+                      
+                      <br>
+                    </div>
+                    <div class="col-lg-6" style="background-color:#f9f9f9; border-right:solid 1px #f0f0f0; border-left:solid 1px #f0f0f0; height:549px; overflow-y:auto; display:none;" id="artFlow">
+                      <br>
+
+                      <span id="dropArt"></span>
+
+                      <br>
+                    </div>
+                    <div class="col-lg-6" style="background-color:#f9f9f9; border-right:solid 1px #f0f0f0; border-left:solid 1px #f0f0f0; height:549px; overflow-y:auto; display:none;" id="polFlow">
+                      <br>
+
+                      <span id="dropPol"></span>
+
+                      <br>
+                    </div>
+                    <div class="col-lg-6" style="background-color:#f9f9f9; border-right:solid 1px #f0f0f0; border-left:solid 1px #f0f0f0; height:549px; overflow-y:auto; display:none;" id="peoFlow">
+                      <br>
+
+                      <span id="dropPeo"></span>
+
+                      <br>
+                    </div>
+                    <div class="col-lg-6" style="background-color:#f9f9f9; border-right:solid 1px #f0f0f0; border-left:solid 1px #f0f0f0; height:549px; overflow-y:auto; display:none;" id="musFlow">
+                      <br>
+
+                      <span id="dropMus"></span>
+
+                      <br>
+                    </div>
+                    <div class="col-lg-6" style="background-color:#f9f9f9; border-right:solid 1px #f0f0f0; border-left:solid 1px #f0f0f0; height:549px; overflow-y:auto; display:none;" id="entFlow">
+                      <br>
+
+                      <span id="dropEnt"></span>
+
+                      <br>
+                    </div>
+                    <div class="col-lg-6" style="background-color:#f9f9f9; border-right:solid 1px #f0f0f0; border-left:solid 1px #f0f0f0; height:549px; overflow-y:auto; display:none;" id="busFlow">
+                      <br>
+
+                      <span id="dropBus"></span>
+
+                      <br>
+                    </div>
+                    <div class="col-lg-6" style="background-color:#f9f9f9; border-right:solid 1px #f0f0f0; border-left:solid 1px #f0f0f0; height:549px; overflow-y:auto; display:none;" id="fasFlow">
+                      <br>
+
+                      <span id="dropFas"></span>
+
+                      <br>
+                    </div>
+                    <div class="col-lg-6" style="background-color:#f9f9f9; border-right:solid 1px #f0f0f0; border-left:solid 1px #f0f0f0; height:549px; overflow-y:auto; display:none;" id="topFlow">
+                      <br>
+
+                      <span id="dropFas"></span>
+
+                      <br>
+                    </div>!-->
+                    <div class="col-lg-3"></div>
+
+                  </div>
+                </div>
+
+                <div class="col-lg-12" style="background-color:white; border-left:solid 1px #dddddd; border-bottom:solid 1px #dddddd; height:600px; display:none; overflow-y: auto;" id="navFourBod">
+                  <div style="width:100%; height:100%;">
+                    <br>
+
+                    <div style="margin:auto; width:100px; height:100px;">
+                      <img src="../img/profpic.png" alt="" width="100%" height="100%">
+                    </div>
+                    <p style="color:grey; text-align:center; margin:5px; font-size:20px;">Author</p>
+                    <p style="margin:5px; color:silver; text-align:center;" id="profName"></p>
+                    <p style="margin:5px; color:silver; text-align:center;" id="profMail"></p>
+                    <hr style="margin:5px;">
+                    <p style="margin:5px; color:silver;"> Entitled to - <strong id="profcart1" style="color:grey;"></strong> & <strong id="profcart2" style="color:grey;"></strong> </p>
+                    <hr style="margin:5px;">
+                    <p style="margin:5px; color:silver;"> Posts today - <strong style="color:grey;" id="pstTdy"></strong> </p>
+                    <hr style="margin:5px;">
+                    <p style="margin:5px; color:silver;"> Total Posts - <strong style="color:grey;" id="ttPst"></strong> </p>
+                    <hr style="margin:5px;">
+                    <p style="margin:5px; color:silver;"> Total Likes <img src="../img/liked.png" alt="" width="15px" height="15px"> - <strong id="ttLks" style="color:grey;"></strong> </p>
+                    <hr style="margin:5px;">
+                    <p style="margin:5px; color:silver;"> Total Comments <img src="../img/commentd.png" alt="" width="15px" height="15px"> - <strong id="ttCmt" style="color:grey;"></strong> </p>
+                    <hr style="margin:5px;">
+                  </div>
+                </div>
+
+              </div>
+
+            </div>
+        </div>    
+    
+    </div>
+    
+    <!-- scripts bellow -->
+    <script src="author.js"></script>
+    <script src="topshopaut.js"></script>
+    <script src="authorglobe.js"></script>
+    <script src="video.js"></script>
+    <script src="images.js"></script>
+    <script src="imagesedt.js"></script>
+
+  </body>
+</html>

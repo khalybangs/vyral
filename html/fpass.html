@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <head>
+
+  <style media="screen">
+   @media only screen and (min-width: 610px) {
+     
+    }
+    @media only screen and (max-width: 600px) {
+      
+    }
+  </style>
+
+  <meta charset="utf-8">
+  <meta name="robots" content="all,follow">
+  <meta name="googlebot" content="index,follow,snippet,archive">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="beamtrends, beamtrends.com">
+  <meta name="author" content="Khalil Baba">
+  <meta name="keywords" content="beam, beamtrends, trends, beamtrends.com, beam wares, bt">
+
+  <title>
+      vyral - login!
+  </title>
+  <link rel="icon" href="img/log2.png" type="image/png">
+
+  <meta name="keywords" content="">
+
+  
+
+  <!-- styles -->
+  <link href="css/font-awesome.css" rel="stylesheet">
+  <link href="css/bootstrap.min.css" rel="stylesheet">
+  <link href="css/animate.min.css" rel="stylesheet">
+  <link href="css/owl.carousel.css" rel="stylesheet">
+  <link href="css/owl.theme.css" rel="stylesheet">
+  
+
+  <!-- theme stylesheet -->
+  <link href="css/style.default.css" rel="stylesheet" id="theme-stylesheet">
+
+  <!-- your stylesheet with modifications -->
+  <link href="css/custom.css" rel="stylesheet">
+
+  <script src="js/respond.min.js"></script>
+
+
+    <!-- *** SCRIPTS TO INCLUDE ***
+    _________________________________________________________ -->
+    <script src="js/jquery-1.11.0.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/jquery.cookie.js"></script>
+    <script src="js/waypoints.min.js"></script>
+    <script src="js/modernizr.js"></script>
+    <script src="js/bootstrap-hover-dropdown.js"></script>
+    <script src="js/owl.carousel.min.js"></script>
+    <script src="js/front.js"></script>
+
+        <script src="script/angular.js"></script>
+
+</head>
+  </head>
+  <body style="font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; background-color: white; font-weight: lighter; background-color: #f0f0f0;">
+    <div class="container-fluid">
+        <span id="dropChat"></span>
+      </div>
+    <div class="container-fluid" id="container-one">
+
+        <div class="row">
+            <div class="col-md-3"></div>
+            <div class="col-md-6">
+                <br><br>
+                <div style="width: 100%; background-color: white; border-radius:7px; box-shadow: 0px 0px 20px -5px #dddddd;">
+                    <br>
+                    <p style="color:silver; text-align: center; font-size: 13px; margin:5px;" id="globeStat"></p>
+                    <p style="margin:5px; text-align: center;">
+                        <img src="img/lock.png" alt="" width="50px" height="50px" id="curStatus">
+                    </p>
+                    <hr>
+                    <p style="margin: 0px; padding: 5px; color: orange; font-size: 12px;">But first, let's authenticate your account with a few steps!</p>
+                    <!-- alert Pargrph -->
+                    <p style="color: orangered; font-size: 10px; margin: 5px; display: none; text-align: center;" id="alertPar"></p>
+                    <!-- step one - QA-AUTHENTICATION -->
+                    <div id="stepOne" style="width: 95%; margin: auto; border:solid 1px #f9f9f9; margin-bottom: 5px; border-radius: 5px;">
+                        
+                        <p style="text-align: center; margin: 5px; color: silver; font-size: 8px;">step <i style="font-size: 15px; color: orange;">1</i> </p>
+                        <p style="color:orange; text-align: center; font-size: 10px;">Write answer to the question you asigned to verify your account</p>
+                        <p style="margin: 0px; padding: 5px; color:silver; font-size: 10px;"> Question - <i style="color: orange; font-size: 13px;" id="quest"></i> </p>
+                        <input id="inAnswer" type="text" placeholder="answer" style="width:90%; margin: 5px; border: none; background-color: transparent; border-bottom: solid 1px orange;">
+                        <p style="text-align: center; margin: 5px;">
+                            <button id="subQst" class="btn btn-default btn-xs" style="border-radius: 5px;">submit</button>
+                        </p>
+
+                        <br>
+                    </div>
+                    <!-- step two - CODE VERIFICATION -->
+                    <div id="stepTwo" style="width: 95%; margin: auto; border:solid 1px #f9f9f9; margin-bottom: 5px; border-radius: 5px; display: none;">
+                        
+                        <p style="text-align: center; margin: 5px; color: silver; font-size: 8px;">step <i style="font-size: 15px; color: orange;">2</i> </p>
+                        <p style="color:orange; text-align: center; font-size: 10px;">Send verification code so we can verify your email</p>
+                        <p style="margin: 0px; padding: 5px; font-size: 10px; text-align: center;">
+                            <button id="sendVer" class="btn btn-default btn-xs" style="border-radius: 5px;">send code</button>
+                            <span id="verTimer" style="display: none; color: lightblue; font-size: 17px;"></span>
+                            <span id="tElapse" style="color:orangered; display: none; font-size: 13px;">TIME EXPIRED!</span>
+                            <br>
+                            <button id="resendVer" class="btn btn-default btn-xs" style="border-radius: 5px; display: none;">resend code</button>
+                        </p>
+                        <p style="text-align: center; margin:5px;">
+                            <input id="codeIn" type="text" placeholder="000000" style="width:50%; text-align: center; border: none; background-color: transparent; border-bottom: solid 1px orange;">
+                        </p>
+                        <p style="text-align: center; margin: 5px;">
+                            <button id="subCode" class="btn btn-default btn-xs" style="border-radius: 5px; display: none;">submit</button>
+                        </p>
+
+                        <br>
+                    </div>
+                    <!-- step three - NEW PASSWORD -->
+                    <div id="stepThr" style="width: 95%; margin: auto; border:solid 1px #f9f9f9; margin-bottom: 5px; border-radius: 5px; display: none;">
+                        
+                        <p style="text-align: center; margin: 5px; color: silver; font-size: 8px;">step <i style="font-size: 15px; color: orange;">3</i> </p>
+                        <p style="color:orange; text-align: center; font-size: 10px;">Create new password</p>
+                        <p style="text-align: center;">
+                            <input id="passOne" type="password" placeholder="write new password" style="width:80%; margin: 5px; text-align: center; border: none; background-color: transparent; border-bottom: solid 1px #f0f0f0;">
+                            <input id="passTwo" type="password" placeholder="confirm password" style="width:80%; margin: 5px; text-align: center; border: none; background-color: transparent; border-bottom: solid 1px #f0f0f0;">
+                        </p>
+                        <p style="text-align: center; margin: 5px;">
+                            <button id="submitPwd" class="btn btn-default btn-xs" style="border-radius: 5px; display: none;">submit</button>
+                        </p>
+
+                        <br>
+                    </div>
+
+                    <br>
+                </div>
+            </div>
+            <div class="col-md-3"></div>
+        </div>
+      
+    </div>
+
+    <span id="drp-scrpts"></span>
+    <script src="scrpt.js"></script>
+
+    <script>
+     
+    </script>
+
+  </body>
+</html>

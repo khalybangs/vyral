@@ -1,0 +1,324 @@
+<!DOCTYPE html>
+<html lang="zxx" class="no-js">
+<head>
+
+      <style media="screen">
+        
+      @media only screen and (min-width: 610px) {
+        #show {
+          width:40%;
+        }
+      }
+      @media only screen and (max-width: 600px) {
+        #show {
+          width:90%;
+        }
+      }
+      </style>
+
+    <meta charset="utf-8">
+    <meta name="robots" content="all,follow">
+    <meta name="googlebot" content="index,follow,snippet,archive">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="beamtrends, beamtrends.com">
+    <meta name="author" content="Khalil Baba">
+    <meta name="keywords" content="beam, beamtrends, trends, beamtrends.com, beam wares, bt">
+
+    <title>
+        beamtrends Admin Center
+    </title>
+    <link rel="icon" href="img/log2.png" type="image/png">
+
+    <meta name="keywords" content="">
+
+    
+
+    <!-- styles -->
+    <link href="css/font-awesome.css" rel="stylesheet">
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/animate.min.css" rel="stylesheet">
+    <link href="css/owl.carousel.css" rel="stylesheet">
+    <link href="css/owl.theme.css" rel="stylesheet">
+    
+
+    <!-- theme stylesheet -->
+    <link href="css/style.default.css" rel="stylesheet" id="theme-stylesheet">
+
+    <!-- your stylesheet with modifications -->
+    <link href="css/custom.css" rel="stylesheet">
+
+    <script src="js/respond.min.js"></script>
+
+    <link rel="shortcut icon" href="favicon.png">
+
+  </head>
+  <body id="body" style="background-color:#f0f0f0; font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; background-color: white; font-weight: lighter;">
+        <div class="container-fluid" id="">
+
+            <div id="show" style="height:300px; margin: auto; margin-top:100px; background-color:#f9f9f9; box-shadow: 0px 0px 20px -5px #1a1a1a; display:none; position:fixed; z-index:3; border:solid 2px orange; border-radius:10px;">
+              <br>
+              <p id="useradp" style="display:none; color:grey; text-align:center; font-size:18px;"> Login <strong style="color:orange;"> User Admin</strong> </p>
+              <p id="adsmanp" style="display:none; color:grey; text-align:center; font-size:18px;"> Login <strong style="color:orange;"> Ads Manager</strong> </p>
+              <p id="bigjoup" style="display:none; color:grey; text-align:center; font-size:18px;"> Login <strong style="color:orange;"> Big Journal</strong> </p>
+              <p id="amncntp" style="display:none; color:grey; text-align:center; font-size:18px;"> Login <strong style="color:orange;"> Admin Center</strong> </p>
+              <div style="background-color:white; width:100%; height:165px;">
+                <br>
+
+                <form id="useradf" style="display:none;">
+                  <p style="text-align:center;">
+                    <input type="text" name="" placeholder="Admin Username" style="border:none; border-bottom:solid 1px orange; width:90%; height:30px; color:grey;">
+                    <br>
+                    <input type="password" name="" placeholder="password" style="border:none; border-bottom:solid 1px orange; width:90%; height:30px; color:grey;">
+                    <br><br><br>
+                    <input type="submit" name="" value="submit" class="btn btn-success btn-xs" style="border-radius:10px;">
+                  </p>
+                </form>
+
+                <form id="adsmanf" style="display:none;">
+                <p style="text-align:center;">
+                  <input type="text" name="" placeholder="Manager Username" style="border:none; border-bottom:solid 1px orange; width:90%; height:30px; color:grey;">
+                  <br>
+                  <input type="password" name="" placeholder="password" style="border:none; border-bottom:solid 1px orange; width:90%; height:30px; color:grey;">
+                  <br><br><br>
+                  <button class="btn btn-success btn-xs" style="border-radius:10px;" id="adsmsubmit">login</button>
+                </p>
+              </form>
+              
+              <!-- big journal login -->
+              <div id="bigjouf" style="display:none;">
+                <p style="text-align:center;">
+                  <input type="text" name="" value="khaalilbaba@gmail.com" placeholder="Journal user email" style="border:none; border-bottom:solid 1px orange; width:90%; height:30px; color:grey;" id="bjemail">
+                  <br>
+                  <input type="password" value="ddd06279" name="" placeholder="password" style="border:none; border-bottom:solid 1px orange; width:90%; height:30px; color:grey;" id="bjpwd">
+                  <br><br>
+                  <button class="btn btn-success btn-sm" style="border-radius:15px;" id="bjsubmit">login</button>
+                </p>
+              </div>
+
+                <div id="amncntf" style="display:none;">
+                <p style="text-align:center;">
+                  <input type="text" name="" id="acunme" placeholder="Admin email" value="khaalilbaba@gmail.com" style="border:none; border-bottom:solid 1px orange; width:90%; height:30px; color:grey;">
+                  <br>
+                  <input type="password" id="acpwd" name="" placeholder="password" value="e0dj8103" style="border:none; border-bottom:solid 1px orange; width:90%; height:30px; color:grey;">
+                  <br><br>
+                  <input type="submit" id="acsubmit" name="" value="submit" class="btn btn-success btn-sm" style="border-radius:15px;">
+                </p>
+              </div>
+
+                <br>
+              </div>
+              <br>
+              <p onclick="CloseShow()" style="text-align:center; cursor: pointer; margin: 5px;">
+                <img src="img/can.png" alt="" width="15px" height="15px">
+              </p>
+
+            </div>
+
+          <script type="text/javascript">
+
+            function Show1() {
+              document.getElementById('show').style.display = "block";
+              document.getElementById('useradp').style.display = "block";
+              document.getElementById('useradf').style.display = "block";
+              document.getElementById('adsmanp').style.display = "none";
+              document.getElementById('adsmanf').style.display = "none";
+              document.getElementById('bigjoup').style.display = "none";
+              document.getElementById('bigjouf').style.display = "none";
+              document.getElementById('amncntp').style.display = "none";
+              document.getElementById('amncntf').style.display = "none";
+            }
+            function Show2() {
+              document.getElementById('show').style.display = "block";
+              document.getElementById('adsmanp').style.display = "block";
+              document.getElementById('adsmanf').style.display = "block";
+              document.getElementById('useradp').style.display = "none";
+              document.getElementById('useradf').style.display = "none";
+              document.getElementById('bigjoup').style.display = "none";
+              document.getElementById('bigjouf').style.display = "none";
+              document.getElementById('amncntp').style.display = "none";
+              document.getElementById('amncntf').style.display = "none";
+            }
+            function Show3() {
+              document.getElementById('show').style.display = "block";
+              document.getElementById('bigjoup').style.display = "block";
+              document.getElementById('bigjouf').style.display = "block";
+              document.getElementById('adsmanp').style.display = "none";
+              document.getElementById('adsmanf').style.display = "none";
+              document.getElementById('useradp').style.display = "none";
+              document.getElementById('useradf').style.display = "none";
+              document.getElementById('amncntp').style.display = "none";
+              document.getElementById('amncntf').style.display = "none";
+            }
+            function Show4() {
+              document.getElementById('show').style.display = "block";
+              document.getElementById('amncntp').style.display = "block";
+              document.getElementById('amncntf').style.display = "block";
+              document.getElementById('adsmanp').style.display = "none";
+              document.getElementById('adsmanf').style.display = "none";
+              document.getElementById('bigjoup').style.display = "none";
+              document.getElementById('bigjouf').style.display = "none";
+              document.getElementById('useradp').style.display = "none";
+              document.getElementById('useradf').style.display = "none";
+            }
+            function CloseShow() {
+              document.getElementById('show').style.display = "none";
+            }
+
+          </script>
+
+          <!-- modal done done -->
+
+          <div class="row">
+            <div class="col-xs-12 clearfix visible-xs" style="position:fixed; z-index:2; height:40px; box-shadow:0px 0px 10px silver; background-color:white;">
+              <p style="float:left; margin:10px;">
+                <strong style="color:orange; font-size:15px;">Admin center vyral </strong>
+              </p>
+              <p style="float:right; margin:5px;">
+                <img src="img/log2.png" alt="" width="30px" height="30px">
+              </p>
+            </div>
+            <div id="header1" class="col-md-12 clearfix visible-lg" style="position:fixed; z-index:2; height:40px; box-shadow:0px 0px 10px silver; background-color:white;">
+              <ul style="float:left; margin:5px;">
+                <img src="img/log2.png" alt="" width="30px" height="30px">
+              </ul>
+              <p style="float:right; margin:5px;">
+                <!--<button type="button" name="button" class="btn btn-sm" onclick="Show1()" style="border:solid 1px orange; background-color:orange; border-radius:5px; margin-right:5px; color:white;">user admin</button>
+                <button type="button" name="button" class="btn btn-sm" onclick="Show2()" style="border:solid 1px orange; background-color:orange; border-radius:5px; margin-right:5px; color:white;">ads manager</button>-->
+                <button type="button" name="button" class="btn btn-sm" onclick="Show3()" style="border:solid 1px orange; background-color:orange; border-radius:5px; margin-right:5px; color:white;">bigjournal</button>
+                <button type="button" name="button" class="btn btn-sm" onclick="Show4()" style="border:solid 1px orange; background-color:orange; border-radius:5px; margin-right:5px; color:white;">admin center</button>
+              </p>
+            </div>
+          </div>
+          <div class="" style="height:40px;">
+
+          </div>
+          <!-- header done -->
+
+          <div class="row">
+            <div class="col-md-12 col-xs-12">
+              <div style="width: 100%; background-color: white; border-radius: 5px; box-shadow: 0px 0px 20px -15px grey;">
+                <br>
+                <div class="row">
+
+                  <div class="col-lg-1"></div>
+                  <div class="col-lg-10 col-xs-12">
+                    <div style="width: 97.5%; margin: auto; background-color: darkorange; border-radius: 5px; box-shadow: 0px 0px 10px -1px rgba(0, 0, 0, 0.4);">
+                      <div class="row">
+                        <div class="col-lg-4 col-xs-12" style="height: 220px;">
+                          <div style="width: 90%; margin: auto; height: 100%;">
+                            <div style="height: 130px; width: 100%;">
+                              <p style="text-align: center; font-size: 70px; margin: 0px; padding: 2px; font-weight: bolder; color: white; text-shadow: 0px 0px 10px #0000003f;" id="totUsrs">0</p>
+                              <p style="text-align: center; font-size: 30px; margin: 0px; padding: 2px; font-weight: bolder; color: white; text-shadow: 0px 0px 10px #00000030; margin-top: -10px;">TOTAL USERS</p>
+                            </div>
+                            <div style="width: 90%; margin: auto; background-color: white; height: 3px; margin-top: 15px; border-radius: 10px;"></div>
+                            <p style="text-align: center; font-size: 25px; margin: 0px; padding: 2px; font-weight: bolder; color: white; text-shadow: 0px 0px 10px #00000030; margin-top: 5px;">ONLINE: <span style="text-shadow: 0px 0px 10px #0000003f;" id="onlUsrs">0</span> </p>
+                          </div>
+                        </div>
+                        <div class="col-lg-4 col-xs-12" style="height: 220px;">
+                          <div style="width: 90%; margin: auto; height: 100%;">
+                            <div style="height: 130px; width: 100%;">
+                              <p style="text-align: center; font-size: 70px; margin: 0px; padding: 2px; font-weight: bolder; color: white; text-shadow: 0px 0px 10px #0000003f;" id="usrJrns">0</p>
+                              <p style="text-align: center; font-size: 30px; margin: 0px; padding: 2px; font-weight: bolder; color: white; text-shadow: 0px 0px 10px #00000030; margin-top: -10px;">USER JOURNALS</p>
+                            </div>
+                            <div style="width: 90%; margin: auto; background-color: white; height: 3px; margin-top: 15px; border-radius: 10px;"></div>
+                            <p style="text-align: center; font-size: 25px; margin: 0px; padding: 2px; font-weight: bolder; color: white; text-shadow: 0px 0px 10px #00000030; margin-top: 5px;">BY ADMIN: <span style="text-shadow: 0px 0px 10px #0000003f;" id="bgjJrns">0</span> </p>
+                          </div>
+                        </div>
+                        <div class="col-lg-4 col-xs-12" style="height: 220px;">
+                          <div style="width: 90%; margin: auto; height: 100%;">
+                            <div style="height: 130px; width: 100%;">
+                              <p style="text-align: center; font-size: 70px; margin: 0px; padding: 2px; font-weight: bolder; color: white; text-shadow: 0px 0px 10px #0000003f;" id="">0</p>
+                              <p style="text-align: center; font-size: 30px; margin: 0px; padding: 2px; font-weight: bolder; color: white; text-shadow: 0px 0px 10px #00000030; margin-top: -10px;">TOTAL STRINGS</p>
+                            </div>
+                            <div style="width: 90%; margin: auto; background-color: white; height: 3px; margin-top: 15px; border-radius: 10px;"></div>
+                            <p style="text-align: center; font-size: 25px; margin: 0px; padding: 2px; font-weight: bolder; color: white; text-shadow: 0px 0px 10px #00000030; margin-top: 5px;">ALL THREADS: <span style="text-shadow: 0px 0px 10px #0000003f;" id="ttlThr">0</span> </p>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-lg-1"></div>
+                  <br>
+
+                </div>
+                <br>
+               </div>
+               <br>
+              <br>
+            </div>
+            <div class="col-md-12 clearfix visible-lg" style="height:600px; background-color:white; background-image:url('img/admin.png'); background-size:100% 100%;">
+
+            </div>
+            <div class="col-xs-12 clearfix visible-xs" style="height:200px; background-color:white; background-image:url('img/admin.png'); background-size:100% 100%; margin-bottom: 10px;">
+
+            </div>
+            <p class="clearfix visible-xs" style="text-align:center; margin:0px;">
+              <button type="button" name="button" class="btn btn-sm" onclick="Show3()" style="border:solid 1px orange; background-color:orange; border-radius:5px; color:white;">bigjournal</button>
+            </p>
+          </div>
+          <br>
+          <div class="row">
+
+            <div class="col-xs-12 col-md-12" style="background-color: white;">
+              <br>
+              <div class="row">
+                <div class="col-md-3"></div>
+                <div class="col-md-6 col-xs-12">
+                  <p style="margin:10px; color:grey; font-size:18px;"> <strong>administrators updates</strong> </p>
+                  <div class="" style="width:95%; height:340px; background-color:#f9f9f9; border:solid 1px #f0f0f0; margin:auto; border-radius:5px; overflow-y:auto;">
+                    <br>
+
+                    <span id="drp_updtes"></span>
+
+                    <br>
+                  </div>
+                </div>
+                <div class="col-md-3"></div>
+              </div>
+              <br>
+            </div>
+            
+          </div>
+
+          <!-- FOOTER HERE -->
+          <div class="" style="height:50px;">
+
+          </div>
+          <div class="row">
+            <div class="col-md-12 clearfix visible-lg" style="height:35px; bottom:0px; right:0px; position:fixed; z-index:2; background-color:darkorange; box-shadow:0px 0px 10px rgba(0, 0, 0, 0.253);">
+              <p style="float:left; margin:5px;">
+                <strong style="color:white; font-size:20px;">Admin community threadal<sup>TM</sup> </strong>
+              </p>
+              <p style="text-align:center; margin:5px; float:right;">
+                <img src="img/bw3.png" alt="" width="28px" height="28px">
+              </p>
+            </div>
+            <div class="col-xs-12 clearfix visible-xs" style="height:40px; bottom:0px; right:0px; position:fixed; z-index:2; background-color:darkorange; box-shadow:0px 0px 10px rgba(0, 0, 0, 0.253);">
+              <p style="text-align:center; margin:5px;">
+                <img src="img/bw3.png" alt="" width="28px" height="28px">
+              </p>
+            </div>
+          </div>
+
+        </div>
+
+
+
+        <!-- landscape/pc version margin done -->
+
+
+            <!-- *** SCRIPTS TO INCLUDE ***
+        _________________________________________________________ -->
+          <script src="js/jquery-1.11.0.min.js"></script>
+          <script src="js/bootstrap.min.js"></script>
+          <script src="js/jquery.cookie.js"></script>
+          <script src="js/waypoints.min.js"></script>
+          <script src="js/modernizr.js"></script>
+          <script src="js/bootstrap-hover-dropdown.js"></script>
+          <script src="js/owl.carousel.min.js"></script>
+          <script src="js/front.js"></script>
+          <script src="adminlogs.js"></script>
+
+
+  </body>
+</html>

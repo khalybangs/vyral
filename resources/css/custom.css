@@ -1,0 +1,28 @@
+
+@media only screen and (min-width: 610px) {
+  /** Your theme modifications here **/
+  .srchCon_tg::placeholder {
+      font-size: 10px;
+      padding-left: 5px;
+  }
+  
+  ::-webkit-scrollbar {
+    width: 10px;
+  }
+  ::-webkit-scrollbar:horizontal {
+    height: 4px;
+  }
+  ::-webkit-scrollbar-track {
+    background: transparent;
+    border-radius: 10px;
+  }
+  ::-webkit-scrollbar-track:horizontal {
+    background: transparent;
+  }
+  ::-webkit-scrollbar-thumb {
+    background: #dddddd;
+    border-radius: 10px;
+  }
+}
+@media only screen and (max-width: 600px) {
+}

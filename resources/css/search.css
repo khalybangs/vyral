@@ -1,0 +1,23 @@
+@media only screen and (min-width: 610px) {
+    #srchflow-al {
+        margin-top:15px;
+    }
+    #searcherCon {
+        border-radius:5px;
+    }
+    #closeSrchrXs {
+        display: none;
+    }
+    #srchrFrnds, #srchrStrngs {
+        height:250px;
+    }
+}
+@media only screen and (max-width: 600px) {
+    #srchflow-al {
+        display: none;
+        border: none;
+    }
+    #srchrFrnds, #srchrStrngs {
+        height:100%;
+    }
+}

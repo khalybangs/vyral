@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+
+  <style media="screen">
+  #ind2, #ind2-xs {
+    display:none;
+  }
+  #mus2, #srchbtn-xs {
+    display:none;
+  }
+  #pol2 {
+    display:none;
+  }
+  #spo2 {
+    display:none;
+  }
+  #ent2 {
+    display:none;
+  }
+  #fas2 {
+    display:none;
+  }
+  #bus2 {
+    display:none;
+  }
+  #peo2 {
+    display:none;
+  }
+  #art2 {
+    display:none;
+  }
+  #tic2 {
+    display:none;
+  }
+  #abt2 {
+    display:none;
+  }
+  #pro2 {
+    display:none;
+  }
+  @media only screen and (min-width: 610px) {
+    #flowbod {
+      height:480px;
+    }
+    #openFriends {
+      margin-top:-40px;
+    }
+    
+    #chtFlwAll {
+        height: 450px;
+        overflow-y: auto;
+    }
+    .chtng-flw {
+        height: 420px;
+    }
+    .chatBodBttm {
+      border-bottom-left-radius: 3px;
+      border-bottom-right-radius: 3px;
+    }
+    .chatBodTop{
+      border-top-left-radius: 3px;
+      border-top-right-radius: 3px;
+    }
+  }
+  @media only screen and (max-width: 600px) {
+    #flowbod {
+      height:100%;
+    }
+    #openFriends {
+      margin-top:-90px;
+    }
+    #profNavbar {
+      margin-top:10px;
+    }
+    #naverxs {
+      display: block;
+    }
+    
+    #chtSrchr {
+        display: none;
+    }
+    #dropChatBody {
+      display: none;
+    }
+    .chtng-flw {
+        height: 100%;
+        border: none;
+    }
+    .chatBodBttm {
+      position: fixed;
+      z-index: 3;
+      bottom: 0;
+      right: 0;
+    }
+  }
+  </style>
+
+<meta charset="utf-8">
+<meta name="robots" content="all,follow">
+<meta name="googlebot" content="index,follow,snippet,archive">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="description" content="threadal, threadal.com">
+<meta name="author" content="Khalil Baba">
+<meta name="keywords" content="beam, threadal, threads, threadal.com, beam wares, bw">
+<META http-equiv="Content-Type" content="text/html; charset= ISO-8859-1">
+  
+<title>
+    my chats
+</title>
+<link rel="icon" href="img/log2.png" type="image/png">
+
+<meta name="keywords" content="">
+
+
+
+<!-- styles -->
+<link href="css/font-awesome.css" rel="stylesheet">
+<link href="css/bootstrap.min.css" rel="stylesheet">
+<link href="css/animate.min.css" rel="stylesheet">
+<link href="css/owl.carousel.css" rel="stylesheet">
+<link href="css/owl.theme.css" rel="stylesheet">
+
+
+<!-- theme stylesheet -->
+<link href="css/style.default.css" rel="stylesheet" id="theme-stylesheet">
+
+<!-- your stylesheet with modifications -->
+<link href="css/custom.css" rel="stylesheet">
+<link href="../css/imgedits.css" rel="stylesheet">
+<link href="../css/load.css" rel="stylesheet">
+<link href="../css/chats.css" rel="stylesheet">
+<link href="../css/search.css" rel="stylesheet">
+<link href="../css/strings.css" rel="stylesheet">
+<link href="../css/reviewer.css" rel="stylesheet">
+
+<script src="js/respond.min.js"></script>
+<!-- *** SCRIPTS TO INCLUDE ***
+_________________________________________________________ -->
+<script src="js/jquery-1.11.0.min.js"></script>
+<script src="js/bootstrap.min.js"></script>
+<script src="js/jquery.cookie.js"></script>
+<script src="js/waypoints.min.js"></script>
+<script src="js/modernizr.js"></script>
+<script src="js/bootstrap-hover-dropdown.js"></script>
+<script src="js/owl.carousel.min.js"></script>
+<script src="js/front.js"></script>
+
+<script src="script/angular.js"></script>
+
+</head>
+<body style="font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; background-color:#f0f0f0;">
+
+  <div class="container-fluid">
+    <span id="dropChat"></span>
+  </div>
+
+    <div class="container-fluid" id="container-one">
+        <span id="hspan"></span>
+        
+        <!-- header done! -->
+        
+        <div class="row" id="mainbod">
+            
+            <!-- chats flow here -->
+            <div class="col-lg-4 col-xs-12">
+                <div id="chtSrchr" class="" style="width: 100%; height: 40px; margin-bottom:10px; border-radius: 3px;">
+
+                </div>
+                <div id="chtFlwAll" style="width: 100%;">
+                    <br>
+
+                    <div id="conDropCht">
+                        <span id="dropchat"></span>
+                    </div>
+                    <div id="conDropCht-srch" style="display: none;">
+                        <span id="dropchat-srch"></span>
+                    </div>
+                
+                    <br>
+                </div>
+            </div>
+
+            <!-- chat here -->
+            <div class="col-lg-5 col-xs-12" id="dropChatBody">
+                
+                <div id="noChatsClckd" style="width:100%; height: 500px;">
+                    <br>
+                    <div style="margin-top:50px; width: 100%;">
+                        <br>
+                        <div style="height: 200px; width: 100px; margin: auto;">
+                            <img src="img/clickcht.png" alt="" width="100%" height="100%" style="opacity: 0.6;">
+                        </div>
+                        <p class="pL_subHs" style="font-size:15px; text-align:center; padding:5px; margin:0px;">Click on a chat!</p>
+                    </div>
+                </div>
+
+                <!--
+                    <div style="width: 100%; height:50px; background-color: #f9f9f9; border-top-right-radius: 3px; border-top-left-radius: 3px; border: solid 0.7px #dddddd;">
+                        <div style="width: 20%; height: 100%; float: left;">
+                            <img src="img/profb.png" alt="" width="30px" height="30px" style="margin: 10px; cursor: pointer;">
+                        </div>
+                        <div style="width: 40%; height: 100%; float: left;">
+                            <a href="/"><p style="margin:0px; padding: 10px; color: skyblue; font-size:13px;">@username</p></a>
+                        </div>
+                        <div style="width: 40%; height: 100%; float:right;">
+                            <img src="img/opt.png" alt="" width="15px" height="30px" style="float: right; margin: 10px; cursor: pointer;">
+                            <img src="img/shared.png" alt="" width="30px" height="30px" style="float: right; margin: 10px; cursor: pointer;">
+                        </div>
+                    </div>
+                    <div id="chtng-flw" style="width: 100%; border-right: solid 0.5px #dddddd; border-left: solid 0.5px #dddddd; background-color: white;"></div>
+                    <div style="height: 60px; width: 100%; border:solid 0.7px #dddddd; background-color: #f9f9f9; border-bottom-left-radius: 3px; border-bottom-right-radius: 3px;">
+                        <textarea name="" id="sendMessTxt" style="width: 70%; height: 50px; margin: 5px; float: left; border-radius: 5px;"></textarea>
+                        <img src="img/send.png" width="35px" height="35px" style="float:left; margin:5px;" id="">
+                    </div>
+                -->
+
+            </div>
+
+            <!-- search/trending -->
+            <div class="clearfix visible-lg col-lg-3" id="">
+
+              <div class="clearfix visible-lg" id="trndStrAr" style="width:100%; height:300px; border-radius:5px; margin-top:10px;">
+                <div id="" style="width:100%; height:35px; border-top-right-radius:5px; border-top-left-radius:5px;">
+                    <p style="padding:3px; color:grey;"> <img src="img/strings2.png" alt="" width="20px" height="20px" id="homeind"> <span id="">Trending strings</span> </p>
+                </div>
+                <div class="theChnCon" style="width:95%; height:255px; margin:auto; overflow-y: auto; border-radius:5px; margin-bottom:10px;">
+                  <span id="dispTrndStr"></span>
+                  <br>
+                </div>
+              </div>
+
+            </div>
+            
+        </div>
+        
+    </div>
+    <span id="drp-scrpts"></span>
+    <script src="https://js.paystack.co/v1/inline.js"></script>
+    <script src="scrpt.js"></script>
+    <script src="alerts.js"></script>
+    <script type="module" src="optimize.js"></script>
+    <script type="module" src="string.js"></script>
+    <script>
+      function Index() {
+        $('#indexmin, #openlocate-xs').css('display', 'none');
+      }
+      Index();
+    </script>
+    
+  </body>
+</html>

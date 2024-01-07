@@ -1,0 +1,17 @@
+@media only screen and (min-width: 610px) {
+    #closeChatterXs {
+        display: none;
+    }
+    #chatbod-xs {
+        height: 300px;
+        overflow-y:auto;
+    }
+}
+@media only screen and (max-width: 600px) {
+    #closeChatterXs {
+        display: block;
+    }   
+    #chatsCol {
+        display: none;
+    }
+}

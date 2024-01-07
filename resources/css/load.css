@@ -1,0 +1,91 @@
+
+@keyframes flowLoader {
+    0%   {transform: rotate(0deg);}
+    5%   {transform: rotate(5deg);}
+    10%  {transform: rotate(10deg);}
+    15%  {transform: rotate(15deg);}
+    20%  {transform: rotate(20deg);}
+    25%  {transform: rotate(25deg);}
+    30%  {transform: rotate(30deg);}
+    35%  {transform: rotate(35deg);}
+    40%  {transform: rotate(40deg);}
+    45%  {transform: rotate(45deg);}
+    50%  {transform: rotate(50deg);}
+    55%  {transform: rotate(45deg);}
+    60%  {transform: rotate(40deg);}
+    65%  {transform: rotate(35deg);}
+    70%  {transform: rotate(30deg);}
+    75%  {transform: rotate(25deg);}
+    80%  {transform: rotate(20deg);}
+    85%  {transform: rotate(15deg);}
+    90%  {transform: rotate(10deg);}
+    95%  {transform: rotate(5deg);}
+    100% {transform: rotate(0deg);}
+}
+
+#flowLoader, #flowLoader2, #flowLoader3, #flowLoader4, #flowLoader6, #flowLoader-adc-usrs, #flowLoader-adc-auths, #flowLoader-srch-tag, #flowLoader-top {
+    margin:auto;
+    width:45px;
+    margin-top:10px;
+    margin-bottom:20px;
+    animation-name: flowLoader;
+    animation-duration: 1s;
+    animation-iteration-count: 1s;
+}
+
+@keyframes refresher {
+    0%   {transform: rotate(0deg);}
+    10%  {transform: rotate(-10deg);}
+    15%  {transform: rotate(-25deg);}
+    20%  {transform: rotate(-40deg);}
+    25%  {transform: rotate(-65deg);}
+    30%  {transform: rotate(-80deg);}
+    35%  {transform: rotate(-105deg);}
+    40%  {transform: rotate(-120deg);}
+    45%  {transform: rotate(-145deg);}
+    50%  {transform: rotate(-140deg);}
+    55%  {transform: rotate(-165deg);}
+    60%  {transform: rotate(-180deg);}
+    65%  {transform: rotate(-205deg);}
+    70%  {transform: rotate(-220deg);}
+    75%  {transform: rotate(-245deg);}
+    80%  {transform: rotate(-260deg);}
+    85%  {transform: rotate(-285deg);}
+    90%  {transform: rotate(-305deg);}
+    95%  {transform: rotate(-320deg);}
+    100% {transform: rotate(-360deg);}
+}
+
+#dropLoad-sentCht {
+    width: 30px;
+    animation-name: refresher;
+    animation-duration: 0.5s;
+    animation-iteration-count: infinite;
+}
+
+@keyframes icosa {
+    0%   {background-image: url(../img/loader1.png);}
+    10%  {background-image: url(../img/loader2.png);}
+    15%  {background-image: url(../img/loader3.png);}
+    20%  {background-image: url(../img/loader4.png);}
+    30%  {background-image: url(../img/loader5.png);}
+    35%  {background-image: url(../img/loader6.png);}
+    40%  {background-image: url(../img/loader7.png);}
+    50%  {background-image: url(../img/loader8.png);}
+    55%  {background-image: url(../img/loader9.png);}
+    60%  {background-image: url(../img/loader8.png);}
+    70%  {background-image: url(../img/loader7.png);}
+    75%  {background-image: url(../img/loader6.png);}
+    80%  {background-image: url(../img/loader5.png);}
+    90%  {background-image: url(../img/loader4.png);}
+    95%  {background-image: url(../img/loader3.png);}
+    100%  {background-image: url(../img/loader2.png);}
+}
+
+.icosaLoader {
+    background-image: url(../img/loader1.png);
+    background-size: 100% 100%;
+    animation-name: icosa;
+    animation-duration: 3s;
+    animation-iteration-count: infinite;
+}

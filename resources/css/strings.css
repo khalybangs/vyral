@@ -1,0 +1,67 @@
+
+@keyframes backEffct {
+    0%   {opacity: 0.0;}
+    5%   {opacity: 0.1;}
+    10%  {opacity: 0.2;}
+    15%  {opacity: 0.3;}
+    20%  {opacity: 0.4;}
+    25%  {opacity: 0.5;}
+    30%  {opacity: 0.6;}
+    35%  {opacity: 0.7;}
+    40%  {opacity: 0.8;}
+    45%  {opacity: 0.9;}
+    50%  {opacity: 1.0;}
+    55%  {opacity: 0.9;}
+    60%  {opacity: 0.8;}
+    65%  {opacity: 0.7;}
+    70%  {opacity: 0.6;}
+    75%  {opacity: 0.5;}
+    80%  {opacity: 0.4;}
+    85%  {opacity: 0.3;}
+    90%  {opacity: 0.2;}
+    95%  {opacity: 0.1;}
+    100% {opacity: 0.0;}
+}
+.backStrEffct {
+    animation-name: backEffct;
+    animation-duration: 3s;
+    animation-iteration-count: infinite;
+}
+@media only screen and (min-width: 610px) {
+    .strFlowDiv {
+        height: 570px;
+    }
+    .strContntHandlr {
+        position: fixed; 
+        z-index:4;
+    }
+    .strThrdVwr {
+        display: block;
+        height: 600px;
+    }
+    .strThrdImg {
+        height: 500px;
+        overflow-y: auto;
+    }
+}
+@media only screen and (max-width: 600px) {
+    .strFlowDiv {
+        height: 100%;
+    }
+    .strThrdVwr {
+        /*display: none;*/
+        position: fixed; 
+        z-index:6;
+        margin-top:-35px;
+        display: none;
+    }
+    .strActvtCon {
+        position: fixed; 
+        z-index:7; 
+        bottom: 0; 
+        right: 0;
+    }
+    #thrInfoCon {
+        margin-top: 40px;
+    }
+}
